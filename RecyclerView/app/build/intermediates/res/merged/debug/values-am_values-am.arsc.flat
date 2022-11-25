@@ -1,0 +1,43 @@
+ 
+
+<P>And update the default wildcard mapping. </P>
+
+<DIV class="code panel" style="border-style: solid;border-width: 1px;"><DIV class="codeHeader panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;"><B>struts.xml</B></DIV><DIV class="codeContent panelContent">
+<PRE class="code-java">
+&lt;action name=<SPAN class="code-quote">&quot;*&quot;</SPAN> class=<SPAN class="code-quote">&quot;tutorial.TutorialSupport&quot;</SPAN>&gt;
+  &lt;result&gt;/{1}.jsp&lt;/result&gt;
+&lt;/action&gt;
+</PRE>
+</DIV></DIV>
+
+<P>Now, we can update <TT>HelloWorld.jsp</TT> and <TT>Missing.jsp</TT> to lookup the messages.</P>
+
+<H4><A name="LocalizingOutput-Missing.jsp"></A>Missing.jsp </H4>
+
+<P><IMG class="emoticon" src="https://cwiki.apache.org/confluence/images/icons/emoticons/forbidden.gif" height="16" width="16" align="absmiddle" alt="" border="0"> This feature is under construction. Please try again in the next iteration. <BR>
+<IMG class="emoticon" src="https://cwiki.apache.org/confluence/images/icons/emoticons/add.gif" height="16" width="16" align="absmiddle" alt="" border="0"> &lt;s:text name=&quot;Missing.message&quot;/&gt;</P>
+
+<P>In the case of HelloWorld, we set the message from the Action class. Let's update the class to use the message resource instead. </P>
+
+<DIV class="code panel" style="border-style: solid;border-width: 1px;"><DIV class="codeHeader panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;"><B>HelloWorld.java</B></DIV><DIV class="codeContent panelContent">
+<PRE class="code-java">
+<SPAN class="code-keyword">package</SPAN> tutorial;
+
+<SPAN class="code-keyword">public</SPAN> class HelloWorld <SPAN class="code-keyword">extends</SPAN> TutorialSupport {
+
+    <SPAN class="code-keyword">public</SPAN> <SPAN class="code-keyword">static</SPAN> <SPAN class="code-keyword">final</SPAN> <SPAN class="code-object">String</SPAN> MESSAGE = <SPAN class="code-quote">&quot;HelloWorld.message&quot;</SPAN>;
+
+    <SPAN class="code-keyword">public</SPAN> <SPAN class="code-object">String</SPAN> execute() <SPAN class="code-keyword">throws</SPAN> Exception {
+        setMessage(getText(MESSAGE));
+        <SPAN class="code-keyword">return</SPAN> SUCCESS;
+    }
+
+  <SPAN class="code-comment">// ... 
+</SPAN>}
+</PRE>
+</DIV></DIV>
+
+<H3><A name="LocalizingOutput-HowtheCodeWorks"></A>How the Code Works </H3>
+
+<UL>
+	<LI>For <TT>Missing.jsp</TT>, we used the <TT>text</TT> tag to lookup the message from the resource bundle.</LI>

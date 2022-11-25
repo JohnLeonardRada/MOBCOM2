@@ -1,0 +1,9 @@
+ocs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A>&nbsp;id)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maps collection changes</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/hibernate/envers/entities/mapper/PropertyMapper.html#mapToEntityFromMap(org.hibernate.envers.configuration.AuditConfiguration, java.lang.Object, java.util.Map, java.lang.Object, org.hibernate.envers.reader.AuditReaderImplementor, java.lang.Number)">mapToEntityFromMap</A></B>(<A HREF="../../../../../org/hibernate/envers/configuration

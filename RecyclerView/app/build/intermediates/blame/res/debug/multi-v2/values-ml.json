@@ -1,0 +1,66 @@
+.fs.DefaultFileManagerFactory;
+import com.opensymphony.xwork2.util.location.LocatableProperties;
+import com.opensymphony.xwork2.util.logging.Logger;
+import com.opensymphony.xwork2.util.logging.LoggerFactory;
+import com.opensymphony.xwork2.util.reflection.ReflectionProvider;
+import ognl.PropertyAccessor;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
+
+
+/**
+ * DefaultConfiguration
+ *
+ * @author Jason Carreira
+ *         Created Feb 24, 2003 7:38:06 AM
+ */
+public class DefaultConfiguration implements Configuration {
+
+    protected static final Logger LOG = LoggerFactory.getLogger(DefaultConfiguration.class);
+
+
+    // Programmatic Action Configurations
+    protected Map<String, PackageConfig> packageContexts = new LinkedHashMap<String, PackageConfig>();
+    protected RuntimeConfiguration runtimeConfiguration;
+    protected Container container;
+    protected String defaultFrameworkBeanName;
+    protected Set<String> loadedFileNames = new TreeSet<String>();
+    protected List<UnknownHandlerConfig> unknownHandlerStack;
+
+
+    ObjectFactory objectFactory;
+
+    public DefaultConfiguration() {
+        this("xwork");
+    }
+
+    public DefaultConfiguration(String defaultBeanName) {
+        this.defaultFrameworkBeanName = defaultBeanName;
+    }
+
+
+    public PackageConfig getPackageConfig(String name) {
+        return packageContexts.get(name);
+    }
+
+    public List<UnknownHandlerConfig> getUnknownHandlerStack() {
+        return unknownHandlerStack;
+    }
+
+    public void setUnknownHandlerStack(List<UnknownHandlerConfig> unknownHandlerStack) {
+        this.unknownHandlerStack = unknownHandlerStack;
+    }
+
+    public Set<String> getPackageConfigNames() {
+        return packageContexts.keySet();
+    }
+
+    public Map<String, PackageConfig> getPackageConfigs() {
+        return packageContexts;

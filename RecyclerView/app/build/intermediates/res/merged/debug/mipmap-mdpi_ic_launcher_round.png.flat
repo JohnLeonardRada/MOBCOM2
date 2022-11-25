@@ -1,0 +1,68 @@
+presents an order imposed upon a <tt>Criteria</tt> result set</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../org/hibernate/criterion/class-use/Projection.html#org.hibernate.criterion"><B>Projection</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An object-oriented representation of a query result set projection  in a <A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate"><CODE>Criteria</CODE></A> query.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../org/hibernate/criterion/class-use/ProjectionList.html#org.hibernate.criterion"><B>ProjectionList</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../org/hibernate/criterion/class-use/Property.html#org.hibernate.criterion"><B>Property</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A factory for property-specific criterion and projection instances</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../org/hibernate/criterion/class-use/PropertyExpression.html#org.hibernate.criterion"><B>PropertyExpression</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;superclass for comparisons between two properties (with SQL binary operators)</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../org/hibernate/criterion/class-use/PropertyProjection.html#org.hibernate.criterion"><B>PropertyProjection</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A property value, or grouped property value</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../org/hibernate/criterion/class-use/Restrictions.html#org.hibernate.criterion"><B>Restrictions</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The <tt>criterion</tt> package may be used by applications as a framework for building
+ new kinds of <tt>Criterion</tt>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../org/hibernate/criterion/class-use/SimpleExpression.html#org.hibernate.criterion"><B>SimpleExpression</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;superclass for "simple" comparisons (with SQL binary operators)</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../org/hibernate/criterion/class-use/SimpleProjection.html#org.hibernate.criterion"><B>SimpleProjection</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A single-column projection that may be aliased</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../org/hibernate/criterion/class-use/SubqueryExpression.html#org.hibernate.criterion"><B>SubqueryExpression</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.hibernate.envers.query.criteria"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Classes in <A HREF="../../../org/hibernate/criterion/package-summary.html">org.hibernate.criterion</A> used by <A HREF="../../../org/hibernate/envers/query/criteria/package-summary.html">org.hibernate.envers.query.criteria</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../org/

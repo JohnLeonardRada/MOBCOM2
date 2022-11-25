@@ -1,0 +1,53 @@
+rnate/criterion/CriteriaSpecification.html" title="interface in org.hibernate.criterion">CriteriaSpecification</A></B></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../org/hibernate/criterion/Criterion.html" title="interface in org.hibernate.criterion">Criterion</A></B></TD>
+<TD>An object-oriented representation of a query criterion that may be used 
+ as a restriction in a <tt>Criteria</tt> query.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../org/hibernate/criterion/EnhancedProjection.html" title="interface in org.hibernate.criterion">EnhancedProjection</A></B></TD>
+<TD>An "enhanced" Projection for a <A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate"><CODE>Criteria</CODE></A> query.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../org/hibernate/criterion/Example.PropertySelector.html" title="interface in org.hibernate.criterion">Example.PropertySelector</A></B></TD>
+<TD>A strategy for choosing property values for inclusion in the query
+ criteria</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../org/hibernate/criterion/Projection.html" title="interface in org.hibernate.criterion">Projection</A></B></TD>
+<TD>An object-oriented representation of a query result set projection  in a <A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate"><CODE>Criteria</CODE></A> query.</TD>
+</TR>
+</TABLE>
+&nbsp;
+
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../org/hibernate/criterion/AbstractEmptinessExpression.html" title="class in org.hibernate.criterion">AbstractEmptinessExpression</A></B></TD>
+<TD>Implementation of AbstractEmptinessExpression.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../org/hibernate/criterion/AggregateProjection.html" title="class in org.hibernate.criterion">AggregateProjection</A></B></TD>
+<TD>Base class for standard aggregation functions.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../org/hibernate/criterion/AliasedProjection.html" title="class in org.hibernate.criterion">AliasedProjection</A></B></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../org/hibernate/criterion/AvgProjection.html" title="class in org.hibernate.criterion">AvgProjection</A></B></TD>
+<TD>An avg() projection</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../org/hibernate/criterion/BetweenExpression.html" title="class in org.hibernate.criterion">BetweenExpression</A></B></TD>
+<TD>Constrains a property to between two values</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../org/hibernate/criterion/Conjunction.html" title="class in org.hibernate.criterion">Conjunction</A></B

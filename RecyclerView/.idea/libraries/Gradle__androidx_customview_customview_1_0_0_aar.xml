@@ -1,0 +1,4 @@
+2">Constructors in <A HREF="../../../../../org/hibernate/envers/entities/mapper/relation/package-summary.html">org.hibernate.envers.entities.mapper.relation</A> with parameters of type <A HREF="../../../../../org/hibernate/envers/entities/IdMappingData.html" title="class in org.hibernate.envers.entities">IdMappingData</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/hibernate/envers/entities/mapper/relation/MiddleIdData.html#MiddleIdData(org.hibernate.envers.configuration.AuditEntitiesConfiguration, org.hibernate.envers.entities.IdMappingData, java.lang.String, java.lang.String, boolean)">MiddleIdData</A></

@@ -1,0 +1,263 @@
+n)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="not(javax.persistence.criteria.Expression)"><!-- --></A><H3>
+not</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Predicate.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Predicate</A> <B>not</B>(<A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Expression.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Expression</A>&lt;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</A>&gt;&nbsp;expression)</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>not</CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.CriteriaBuilder.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.CriteriaBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="and(javax.persistence.criteria.Expression, javax.persistence.criteria.Expression)"><!-- --></A><H3>
+and</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Predicate.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Predicate</A> <B>and</B>(<A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Expression.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Expression</A>&lt;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</A>&gt;&nbsp;x,
+                                                <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Expression.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Expression</A>&lt;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</A>&gt;&nbsp;y)</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>and</CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.CriteriaBuilder.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.CriteriaBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="or(javax.persistence.criteria.Expression, javax.persistence.criteria.Expression)"><!-- --></A><H3>
+or</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Predicate.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Predicate</A> <B>or</B>(<A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Expression.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Expression</A>&lt;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</A>&gt;&nbsp;x,
+                                               <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Expression.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Expression</A>&lt;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</A>&gt;&nbsp;y)</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>or</CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.CriteriaBuilder.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.CriteriaBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="and(javax.persistence.criteria.Predicate...)"><!-- --></A><H3>
+and</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Predicate.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Predicate</A> <B>and</B>(<A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Predicate.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Predicate</A>...&nbsp;restrictions)</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>and</CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.CriteriaBuilder.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.CriteriaBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="or(javax.persistence.criteria.Predicate...)"><!-- --></A><H3>
+or</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Predicate.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Predicate</A> <B>or</B>(<A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Predicate.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Predicate</A>...&nbsp;restrictions)</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>or</CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.CriteriaBuilder.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.CriteriaBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="conjunction()"><!-- --></A><H3>
+conjunction</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Predicate.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Predicate</A> <B>conjunction</B>()</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>conjunction</CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.CriteriaBuilder.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.CriteriaBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="disjunction()"><!-- --></A><H3>
+disjunction</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Predicate.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Predicate</A> <B>disjunction</B>()</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>disjunction</CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.CriteriaBuilder.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.CriteriaBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isTrue(javax.persistence.criteria.Expression)"><!-- --></A><H3>
+isTrue</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Predicate.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Predicate</A> <B>isTrue</B>(<A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Expression.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Expression</A>&lt;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</A>&gt;&nbsp;expression)</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>isTrue</CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.CriteriaBuilder.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.CriteriaBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isFalse(javax.persistence.criteria.Expression)"><!-- --></A><H3>
+isFalse</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Predicate.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Predicate</A> <B>isFalse</B>(<A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Expression.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Expression</A>&lt;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</A>&gt;&nbsp;expression)</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>isFalse</CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.CriteriaBuilder.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.CriteriaBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isNull(javax.persistence.criteria.Expression)"><!-- --></A><H3>
+isNull</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Predicate.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Predicate</A> <B>isNull</B>(<A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Expression.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Expression</A>&lt;?&gt;&nbsp;x)</PRE>
+<DL>
+<DD>s
+ 
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>isNull</CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.CriteriaBuilder.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.CriteriaBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isNotNull(javax.persistence.criteria.Expression)"><!-- --></A><H3>
+isNotNull</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Predicate.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Predicate</A> <B>isNotNull</B>(<A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Expression.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Expression</A>&lt;?&gt;&nbsp;x)</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>isNotNull</CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.CriteriaBuilder.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.CriteriaBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="equal(javax.persistence.criteria.Expression, javax.persistence.criteria.Expression)"><!-- --></A><H3>
+equal</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Predicate.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Predicate</A> <B>equal</B>(<A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Expression.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Expression</A>&lt;?&gt;&nbsp;x,
+                                                  <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Expression.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Expression</A>&lt;?&gt;&nbsp;y)</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>equal</CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.CriteriaBuilder.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.CriteriaBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="notEqual(javax.persistence.criteria.Expression, javax.persistence.criteria.Expression)"><!-- --></A><H3>
+notEqual</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Predicate.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Predicate</A> <B>notEqual</B>(<A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Expression.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Expression</A>&lt;?&gt;&nbsp;x,
+                                                     <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Expression.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Expression</A>&lt;?&gt;&nbsp;y)</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>notEqual</CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.CriteriaBuilder.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.CriteriaBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="equal(javax.persistence.criteria.Expression, java.lang.Object)"><!-- --></A><H3>
+equal</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Predicate.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Predicate</A> <B>equal</B>(<A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Expression.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Expression</A>&lt;?&gt;&nbsp;x,
+                                                  <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;y)</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>equal</CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.CriteriaBuilder.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.CriteriaBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="notEqual(javax.persistence.criteria.Expression, java.lang.Object)"><!-- --></A><H3>
+notEqual</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Predicate.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Predicate</A> <B>notEqual</B>(<A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Expression.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Expression</A>&lt;?&gt;&nbsp;x,
+                                                     <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;y)</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>notEqual</CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.CriteriaBuilder.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.CriteriaBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="greaterThan(javax.persistence.criteria.Expression, javax.persistence.criteria.Expression)"><!-- --></A><H3>
+greaterThan</H3>
+<PRE>
+public &lt;Y extends <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</A>&lt;? super Y&gt;&gt; <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Predicate.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Predicate</A> <B>greaterThan</B>(<A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Expression.html?is-external=true" title="class or interface in javax.persistence">javax.persistence.criteria.Expression</A>&lt;? extends Y&gt;&nbsp;x,
+                                                                                          <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Expression.html?is-external=true" title="cl

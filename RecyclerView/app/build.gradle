@@ -1,0 +1,21 @@
+TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.hibernate.envers.entities.mapper"><B>org.hibernate.envers.entities.mapper</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.hibernate.envers.configuration.metadata"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/hibernate/envers/entities/mapper/CompositeMapperBuilder.html" title="interface in org.hibernate.envers.entities.mapper">CompositeMapperBuilder</A> in <A HREF="../../../../../../org/hibernate/envers/configuration/metadata/package-summary.html">org.hibernate.envers.configuration.metadata</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/hibernate/envers/configuration/metadata/package-summary.html">org.hibernate.envers.configuration.

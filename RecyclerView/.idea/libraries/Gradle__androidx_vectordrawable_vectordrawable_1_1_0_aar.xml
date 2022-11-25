@@ -1,0 +1,16 @@
+://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.hibernate.envers.entities.mapper.PersistentCollectionChangeData</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>PersistentCollectionChangeData</B><DT>extends <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></DL>
+</PRE>
+
+<P>
+Data describing the change of a single object in a persistent collection (when the object was added, removed or
+ modified in the collection).
+<P>
+
+<P>
+<DL>
+<DT><B>Author:</B

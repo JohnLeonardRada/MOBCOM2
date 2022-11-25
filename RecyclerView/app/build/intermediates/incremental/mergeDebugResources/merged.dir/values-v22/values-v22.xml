@@ -1,0 +1,12 @@
+p;&nbsp;&nbsp;&nbsp;Return typed values for all parameters in the rendered SQL fragment</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../org/hibernate/criterion/Junction.html#toSqlString(org.hibernate.Criteria, org.hibernate.criterion.CriteriaQuery)">toSqlString</A></B>(<A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A>&nbsp;crit,
+            <A HREF="../../../org/hibernate/criterion/CriteriaQuery.html" title="interface in org.hibernate.criterion">CriteriaQuery</A>&nbsp;criteriaQuery)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Render the SQL fragment</TD>
+</TR>
+<

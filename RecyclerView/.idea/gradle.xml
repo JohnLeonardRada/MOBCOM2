@@ -1,0 +1,29 @@
+ (dojo.render.html.ie) {
+				ao.srcFunc = "onkeydown";
+				this.disconnect(ao);
+			}
+			ao.srcFunc = "onkeypress";
+		}
+		if (!ao.srcObj[ao.srcFunc]) {
+			return null;
+		}
+		var mjp = dojo.event.MethodJoinPoint.getForMethod(ao.srcObj, ao.srcFunc, true);
+		mjp.removeAdvice(ao.adviceObj, ao.adviceFunc, ao.adviceType, ao.once);
+		return mjp;
+	};
+	this.kwDisconnect = function (kwArgs) {
+		return this._kwConnectImpl(kwArgs, true);
+	};
+};
+dojo.event.MethodInvocation = function (join_point, obj, args) {
+	this.jp_ = join_point;
+	this.object = obj;
+	this.args = [];
+	for (var x = 0; x < args.length; x++) {
+		this.args[x] = args[x];
+	}
+	this.around_index = -1;
+};
+dojo.event.MethodInvocation.prototype.proceed = function () {
+	this.around_index++;
+	if (this.around_index 

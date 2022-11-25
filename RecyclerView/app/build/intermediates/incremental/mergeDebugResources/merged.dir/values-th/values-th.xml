@@ -1,0 +1,71 @@
+ to handle weird issues with setValue with a different type
+            if ((target instanceof CompoundRoot) && (context != null)) {
+                classProp = getClassProperty(context);
+            }
+
+            if (classProp != null) {
+                clazz = (Class) classProp[0];
+                property = (String) classProp[1];
+            }
+
+            tc = (TypeConverter) getConverter(clazz, property);
+
+            if (LOG.isDebugEnabled())
+                LOG.debug("field-level type converter for property [" + property + "] = " + (tc == null ? "none found" : tc));
+        }
+
+        if (tc == null && context != null) {
+            // ok, let's see if we can look it up by path as requested in XW-297
+            Object lastPropertyPath = context.get(ReflectionContextState.CURRENT_PROPERTY_PATH);
+            Class clazz = (Class) context.get(XWorkConverter.LAST_BEAN_CLASS_ACCESSED);
+            if (lastPropertyPath != null && clazz != null) {
+                String path = lastPropertyPath + "." + property;
+                tc = (TypeConverter) getConverter(clazz, path);
+            }
+        }
+
+        if (tc == null) {
+            if (toClass.equals(String.class) && (value != null) && !(value.getClass().equals(String.class) || value.getClass().equals(String[].class))) {
+                // when converting to a string, use the source target's class's converter
+                tc = lookup(value.getClass());
+            } else {
+                // when converting from a string, use the toClass's converter
+                tc = lookup(toClass);
+            }
+
+            if (LOG.isDebugEnabled())
+                LOG.debug("global-level type converter for property [" + property + "] = " + (tc == null ? "none found" : tc));
+        }
+
+
+        if (tc != null) {
+            try {
+                return tc.convertValue(context, target, member, property, value, toClass);
+            } catch (Exception e) {
+                if (LOG.isDebugEnabled())
+                    LOG.debug("unable to convert value using type converter [#0]", e, tc.getClass().getName());
+                handleConversionException(context, property, value, target);
+
+                return TypeConverter.NO_CONVERSION_POSSIBLE;
+            }
+        }
+
+        if (defaultTypeConverter != null) {
+            try {
+                if (LOG.isDebugEnabled())
+                    LOG.debug("falling back to default type converter [" + defaultTypeConverter + "]");
+                return defaultTypeConverter.convertValue(context, target, member, property, value, toClass);
+            } catch (Exception e) {
+                if (LOG.isDebugEnabled())
+                    LOG.debug("unable to convert value using type converter [#0]", e, defaultTypeConverter.getClass().getName());
+                handleConversionException(context, property, value, target);
+
+                return TypeConverter.NO_CONVERSION_POSSIBLE;
+            }
+        } else {
+            try {
+                if (LOG.isDebugEnabled())
+                    LOG.debug("falling back to Ognl's default type conversion");
+                return super.convertValue(value, toClass);
+            } catch (Exception e) {
+                if (

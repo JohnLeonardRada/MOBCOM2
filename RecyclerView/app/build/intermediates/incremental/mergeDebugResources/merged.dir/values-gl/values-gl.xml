@@ -1,0 +1,41 @@
+ic method that is hardwired to Jakarta Commons-EL implementation.
+
+<P>Even if this approach did work, it wouldn't be <EM>clean</EM> as <TT>JSPFactory.setDefault()</TT> should only be called by JSP implementation.</P></TD></TR></TABLE></DIV>
+
+<P>There is a simple, if not elegant, solution available in JSP 2.0 EL, for exposing ValueStack to OGNL. It is possible to create custom functions that can be called from EL expressions. Functions have to be 'public static' and specified in a TLD file.<BR>
+To use a function, import the TLD in a JSP file where you've want to use a function. For example, you could access Action properties by evaluating OGNL expression by a function 'vs' (for valuestack) in EL.</P>
+<DIV class="code panel" style="border-width: 1px;"><DIV class="codeContent panelContent">
+<PRE class="code-xml">
+<SPAN class="code-tag">&lt;%@ taglib uri=<SPAN class="code-quote">&quot;/WEB-INF/tld/wwel.tld&quot;</SPAN> prefix=<SPAN class="code-quote">&quot;x&quot;</SPAN> %&gt;</SPAN>
+
+a[0] = ${x:vs('a[0]')}
+a[0] * 4 = ${x:vs('a[0] * 4')}
+
+Current action name: ${x:name()}
+Top of ValueStack: ${x:top()}
+</PRE>
+</DIV></DIV>
+<P>To use this code you've got to add <TT>wwel.tld</TT> and <TT>Functions.java</TT> to your webapp project.</P>
+
+<DIV class="panelMacro"><TABLE class="tipMacro"><COLGROUP><COL width="24"><COL></COLGROUP><TR><TD valign="top"><IMG src="https://cwiki.apache.org/confluence/images/icons/emoticons/check.gif" width="16" height="16" align="absmiddle" alt="" border="0"></TD><TD>If someone were interested, it would be helpful for a developer (like you!) to define a set of functions that we could include in a future release of the framework.</TD></TR></TABLE></DIV>
+
+<DIV class="code panel" style="border-width: 1px;"><DIV class="codeHeader panelHeader" style="border-bottom-width: 1px;"><B>wwel.tld</B></DIV><DIV class="codeContent panelContent">
+<PRE class="code-xml">
+<SPAN class="code-tag">&lt;?xml version=<SPAN class="code-quote">&quot;1.0&quot;</SPAN>?&gt;</SPAN>
+&lt;taglib xmlns=<SPAN class="code-quote">&quot;http://java.sun.com/xml/ns/j2ee&quot;</SPAN>
+	<SPAN class="code-keyword">xmlns:xsi</SPAN>=<SPAN class="code-quote">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</SPAN>
+	xsi:schemaLocation=<SPAN class="code-quote">&quot;http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd&quot;</SPAN>
+	version=<SPAN class="code-quote">&quot;2.0&quot;</SPAN>&gt;
+
+<SPAN class="code-tag">&lt;description&gt;</SPAN>
+This taglib enables access to the ValueStack
+from JSP 2.0 Expression Language
+<SPAN class="code-tag">&lt;/description&gt;</SPAN>
+
+<SPAN class="code-tag">&lt;tlib-version&gt;</SPAN>1.0<SPAN class="code-tag">&lt;/tlib-version&gt;</SPAN>
+
+<SPAN class="code-tag">&lt;short-name&gt;</SPAN>wwel<SPAN class="code-tag">&lt;/short-name&gt;</SPAN>
+
+<SPAN class="code-tag">&lt;function&gt;</SPAN>
+	<SPAN class="code-tag">&lt;name&gt;</SPAN>vs<SPAN class="code-tag">&lt;/name&gt;</SPAN>
+	<SPAN class="code-tag">&lt;function-class&gt;</SPAN>com.nmote.wwel.Functions<SPAN class="

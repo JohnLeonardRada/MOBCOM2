@@ -1,0 +1,12 @@
+hite" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/hibernate/envers/entities/mapper/id/QueryParameterData.html#hashCode()">hashCode</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/hibernate/envers/entities/mapper/id/QueryParameterData.html#setParameterValue(org.hibernate.Query)">setParameterValue</A></B>(<A HREF="../../../../../../org/hibernate/Query.html" title="interface in org.hibernate">Query</A>&nbsp;query)</C

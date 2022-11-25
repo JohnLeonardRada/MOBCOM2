@@ -1,0 +1,7 @@
+.hibernate.envers.configuration.AuditConfiguration, java.lang.Object, java.util.Map, java.lang.Object, org.hibernate.envers.reader.AuditReaderImplementor, java.lang.Number)">mapToEntityFromMap</A>, <A HREF="../../../../../org/hibernate/envers/entities/mapper/PropertyMapper.html#mapToMapFromEntity(org.hibernate.engine.SessionImplementor, java.util.Map, java.lang.Object, java.lang.Object)">mapToMapFromEntity</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.hibernate.envers.entities.mapper.CompositeMapperBuilder"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH

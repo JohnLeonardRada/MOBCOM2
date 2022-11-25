@@ -1,0 +1,100 @@
+l.transform.Source)">readFrom</A>, <A HREF="../../../../javax/xml/ws/EndpointReference.html#toString()">toString</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="NS"><!-- --></A><H3>
+NS</H3>
+<PRE>
+protected static final java.lang.String <B>NS</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../constant-values.html#javax.xml.ws.wsaddressing.W3CEndpointReference.NS">Constant Field Values</A></DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="W3CEndpointReference()"><!-- --></A><H3>
+W3CEndpointReference</H3>
+<PRE>
+protected <B>W3CEndpointReference</B>()</PRE>
+<DL>
+</DL>
+<HR>
+
+<A NAME="W3CEndpointReference(javax.xml.transform.Source)"><!-- --></A><H3>
+W3CEndpointReference</H3>
+<PRE>
+public <B>W3CEndpointReference</B>(javax.xml.transform.Source&nbsp;source)</PRE>
+<DL>
+<DD>Creates an EPR from infoset representation
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>source</CODE> - A source object containing valid XmlInfoset
+ instance consistent with the W3C WS-Addressing Core
+ recommendation.
+<DT><B>Throws:</B>
+<DD><CODE>WebServiceException</CODE> - If the source does NOT contain a valid W3C WS-Addressing
+   EndpointReference.
+<DD><CODE>java.lang.NullPointerException</CODE> - If the <code>null</code> <code>source</code> value is given</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="writeTo(javax.xml.transform.Result)"><!-- --></A><H3>
+writeTo</H3>
+<PRE>
+public void <B>writeTo</B>(javax.xml.transform.Result&nbsp;result)</PRE>
+<DL>
+<DD>write this <code>EndpointReference</code> to the specified infoset format
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../javax/xml/ws/EndpointReference.html#writeTo(javax.xml.transform.Result)">writeTo</A></CODE> in class <CODE><A HREF="../../../../javax/xml/ws/EndpointReference.html" title="class in javax.xml.ws">EndpointReference</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>result</CODE> - for writing infoset</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HRE

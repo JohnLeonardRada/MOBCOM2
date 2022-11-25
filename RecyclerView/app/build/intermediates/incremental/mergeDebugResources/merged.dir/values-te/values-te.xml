@@ -1,0 +1,95 @@
+er conv) {
+        this.defaultTypeConverter = conv;
+    }
+
+    @Inject
+    public void setFileManagerFactory(FileManagerFactory fileManagerFactory) {
+        this.fileManager = fileManagerFactory.getFileManager();
+    }
+
+    @Inject(value = XWorkConstants.RELOAD_XML_CONFIGURATION, required = false)
+    public void setReloadingConfigs(String reloadingConfigs) {
+        this.reloadingConfigs = Boolean.parseBoolean(reloadingConfigs);
+    }
+
+    @Inject
+    public void setConversionPropertiesProcessor(ConversionPropertiesProcessor propertiesProcessor) {
+        // note: this file is deprecated
+        propertiesProcessor.process("xwork-default-conversion.properties");
+        propertiesProcessor.process("xwork-conversion.properties");
+    }
+
+    @Inject
+    public void setConversionFileProcessor(ConversionFileProcessor fileProcessor) {
+        this.fileProcessor = fileProcessor;
+    }
+
+    @Inject
+    public void setConversionAnnotationProcessor(ConversionAnnotationProcessor annotationProcessor) {
+        this.annotationProcessor = annotationProcessor;
+    }
+
+    @Inject
+    public void setTypeConverterHolder(TypeConverterHolder converterHolder) {
+        this.converterHolder = converterHolder;
+    }
+
+    public static String getConversionErrorMessage(String propertyName, ValueStack stack) {
+        String defaultMessage = LocalizedTextUtil.findDefaultText(XWorkMessages.DEFAULT_INVALID_FIELDVALUE,
+                ActionContext.getContext().getLocale(),
+                new Object[]{
+                        propertyName
+                });
+
+        List<String> indexValues = getIndexValues(propertyName);
+
+        propertyName = removeAllIndexesInProperytName(propertyName);
+
+        String getTextExpression = "getText('" + CONVERSION_ERROR_PROPERTY_PREFIX + propertyName + "','" + defaultMessage + "')";
+        String message = (String) stack.findValue(getTextExpression);
+
+        if (message == null) {
+            message = defaultMessage;
+        } else {
+            message = MessageFormat.format(message, indexValues.toArray());
+        }
+
+        return message;
+    }
+
+    private static String removeAllIndexesInProperytName(String propertyName) {
+        return propertyName.replaceAll(MESSAGE_INDEX_PATTERN, PERIOD);
+    }
+
+    private static List<String> getIndexValues(String propertyName) {
+        Matcher matcher = messageIndexPattern.matcher(propertyName);
+        List<String> indexes = new ArrayList<String>();
+        while (matcher.find()) {
+            Integer index = new Integer(matcher.group().replaceAll(MESSAGE_INDEX_BRACKET_PATTERN, "")) + 1;
+            indexes.add(Integer.toString(index));
+        }
+        return indexes;
+    }
+
+    public String buildConverterFilename(Class clazz) {
+        String className = clazz.getName();
+        return className.replace('.', '/') + "-conversion.properties";
+    }
+
+    @Override
+    public Object convertValue(Map<String, Object> map, Object o, Class aClass) {
+        return convertValue(map, null, null, null, o, aClass);
+    }
+
+    /**
+     * Convert value from one form to another.
+     * Minimum requirement of arguments:
+     * <ul>
+     * <li>supplying context, toClass and value</li>
+     * <li>supplying context, target and value.</li>
+     * </ul>
+     *
+     * @see TypeConverter#convertValue(java.util.Map, java.lang.Object, java.lang.reflect.Member, java.lang.String, java.lang.Object, java.lang.Class)
+     */
+    @Override
+    public Object convertValue(Map<String, Object> context

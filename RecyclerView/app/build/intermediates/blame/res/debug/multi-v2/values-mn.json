@@ -1,0 +1,49 @@
+     List<ContainerProvider> contProviders = new ArrayList<ContainerProvider>();
+        contProviders.addAll(providers);
+
+        reloadContainer(contProviders);
+    }
+
+    /**
+     * Calls the ConfigurationProviderFactory.getConfig() to tell it to reload the configuration and then calls
+     * buildRuntimeConfiguration().
+     *
+     * @throws ConfigurationException
+     */
+    public synchronized List<PackageProvider> reloadContainer(List<ContainerProvider> providers) throws ConfigurationException {
+        packageContexts.clear();
+        loadedFileNames.clear();
+        List<PackageProvider> packageProviders = new ArrayList<PackageProvider>();
+
+        ContainerProperties props = new ContainerProperties();
+        ContainerBuilder builder = new ContainerBuilder();
+        Container bootstrap = createBootstrapContainer(providers);
+        for (final ContainerProvider containerProvider : providers)
+        {
+            bootstrap.inject(containerProvider);
+            containerProvider.init(this);
+            containerProvider.register(builder, props);
+        }
+        props.setConstants(builder);
+
+        builder.factory(Configuration.class, new Factory<Configuration>() {
+            public Configuration create(Context context) throws Exception {
+                return DefaultConfiguration.this;
+            }
+        });
+
+        ActionContext oldContext = ActionContext.getContext();
+        try {
+            // Set the bootstrap container for the purposes of factory creation
+
+            setContext(bootstrap);
+            container = builder.create(false);
+            setContext(container);
+            objectFactory = container.getInstance(ObjectFactory.class);
+
+            // Process the configuration providers first
+            for (final ContainerProvider containerProvider : providers)
+            {
+                if (containerProvider instanceof PackageProvider) {
+                    container.inject(containerProvider);
+   

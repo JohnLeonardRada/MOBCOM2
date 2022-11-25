@@ -1,0 +1,126 @@
+ader panelHeader" style="border-bottom-width: 1px;"><B>Struts 2 Select Tag</B></DIV><DIV class="codeContent panelContent">
+<PRE class="code-html">
+
+<SPAN class="code-tag">&lt;s:select key=<SPAN class="code-quote">&quot;personBean.sport&quot;</SPAN> list=<SPAN class="code-quote">&quot;sports&quot;</SPAN> /&gt;</SPAN>
+
+</PRE>
+</DIV></DIV>
+
+<P>generates this HTML markup:</P>
+
+<DIV class="code panel" style="border-width: 1px;"><DIV class="codeHeader panelHeader" style="border-bottom-width: 1px;"><B>HTML Created By Struts 2 Select Tag</B></DIV><DIV class="codeContent panelContent">
+<PRE class="code-html">
+
+<SPAN class="code-tag">&lt;tr&gt;</SPAN>
+<SPAN class="code-tag">&lt;td class=<SPAN class="code-quote">&quot;tdLabel&quot;</SPAN>&gt;</SPAN>
+<SPAN class="code-tag">&lt;label for=<SPAN class="code-quote">&quot;save_personBean_sport&quot;</SPAN> class=<SPAN class="code-quote">&quot;label&quot;</SPAN>&gt;</SPAN>Favorite sport:<SPAN class="code-tag">&lt;/label&gt;</SPAN>
+<SPAN class="code-tag">&lt;/td&gt;</SPAN>
+<SPAN class="code-tag">&lt;td&gt;</SPAN>
+<SPAN class="code-tag">&lt;select name=<SPAN class="code-quote">&quot;personBean.sport&quot;</SPAN> id=<SPAN class="code-quote">&quot;save_personBean_sport&quot;</SPAN>&gt;</SPAN>
+    <SPAN class="code-tag">&lt;option value=<SPAN class="code-quote">&quot;football&quot;</SPAN>&gt;</SPAN>football<SPAN class="code-tag">&lt;/option&gt;</SPAN>
+    <SPAN class="code-tag">&lt;option value=<SPAN class="code-quote">&quot;baseball&quot;</SPAN>&gt;</SPAN>baseball<SPAN class="code-tag">&lt;/option&gt;</SPAN>
+    <SPAN class="code-tag">&lt;option value=<SPAN class="code-quote">&quot;basketball&quot;</SPAN> selected=<SPAN class="code-quote">&quot;selected&quot;</SPAN>&gt;</SPAN>basketball<SPAN class="code-tag">&lt;/option&gt;</SPAN>
+<SPAN class="code-tag">&lt;/select&gt;</SPAN>
+<SPAN class="code-tag">&lt;/td&gt;</SPAN>
+<SPAN class="code-tag">&lt;/tr&gt;</SPAN>
+
+</PRE>
+</DIV></DIV>
+
+<P>Notice how the HTML generated uses table tags to control the layout of the label and select HTML.  There is also a class, tdLabel, applied to the table column where the label tag is rendered.  Since no theme was specified for the Struts 2 select tag the default xhmtl theme was used.</P>
+
+
+<H3><A name="Struts2Themes-SpecifyingTheThemeStruts2ShouldUse"></A>Specifying The Theme Struts 2 Should Use</H3>
+
+<P>The Struts 2 tags have a theme attribute you can use to specify which Struts 2 theme should be used when creating the HTML for that tag.  The values for the theme attribute are simple, xhtml, css_xhtml, and ajax.  To learn more about these themes visit <A href="themes-and-templates.html" title="Themes and Templates">Themes and Templates Documentation</A>.  This tutorial will review the xhtml, css_xhtml, and the simple themes.  The ajax theme is a special theme used for ajax operations (see <A href="ajax-theme.html" title="ajax theme">Ajax Theme in the documentation</A>).</P>
+
+<P>You can specify the theme on a per Struts 2 tag basis or you can use one of the following methods to specify what theme Struts 2 should use:</P>
+
+<OL>
+	<LI>The theme attribute on the specific tag</LI>
+	<LI>The theme attribute on a tag's surrounding form tag</LI>
+	<LI>The page-scoped attribute named &quot;theme&quot;</LI>
+	<LI>The request-scoped attribute named &quot;theme&quot;</LI>
+	<LI>The session-scoped attribute named &quot;theme&quot;</LI>
+	<LI>The application-scoped attribute named &quot;theme&quot;</LI>
+	<LI>The struts.ui.theme property in struts.properties (defaults to xhtml)</LI>
+</OL>
+
+
+<P>Consult <A href="selecting-themes.html" title="Selecting Themes">Selecting Themes</A> for how to set the theme using the above approaches.</P>
+
+<P>In the example application, examine edit.jsp.  The theme attribute of the form tag is set to xhtml.  Run the application (see the readme.txt file) and view the source for edit.jsp after it is rendered in your browser.  You should see the form HTML tags layout controlled by table tags.  </P>
+
+<P>Change the theme to simple for the form&rsquo;s theme attribute and redeploy the application.  Examine the source for edit.jsp after it is rendered in the browser.  You should see that there are no table tags controlling the layout and also there are no label tags for the text fields.</P>
+
+<P>Change the theme to css_xhtml for the form&rsquo;s theme attribute and redeploy the application. Examine the source for edit.jsp after it is rendered in the browser.  The layout of the form tags is now controlled by div tags and the label tags are back.</P>
+
+
+<H3><A name="Struts2Themes-SpecifyingTheCSSUsedByTheStruts2Tag"></A>Specifying The CSS Used By The Struts 2 Tag</H3>
+
+<P>Change the theme attribute for the form tag back to xhtml.  Notice when you view the source of edit.jsp after it is rendered in the browser that there is a class named tdLabel applied to the table column that contains the label.  This CSS class controls the position of the label in the table column.  The tdLabel style is defined in /Themes_Struts2_Mvn/struts/xhtml/styles.css.  The link to this style sheet was included in edit.jsp&rsquo;s head section when you add the s:head tag to edit.jsp.  </P>
+
+<P>Load this style sheet in your browser (in the example application the link is <A href="http://localhost:8080/Themes_Struts2_Mvn/struts/xhtml/styles.css" class="external-link" rel="nofollow">http://localhost:8080/Themes_Struts2_Mvn/struts/xhtml/styles.css</A> if your Servlet container is running on localhost, port 8080).  You&rsquo;ll see the following:</P>
+
+<DIV class="code panel" style="border-width: 1px;"><DIV class="codeHeader panelHeader" style="border-bottom-width: 1px;"><B>styles.css</B></DIV><DIV class="codeContent panelContent">
+<PRE class="code-html">
+
+.label {font-style:italic; }
+.errorLabel {font-style:italic; color:red; }
+.errorMessage {font-weight:bold; color:red; }
+.checkboxLabel {}
+.checkboxErrorLabel {color:red; }
+.required {color:red;}
+.tdLabel {text-align:right; vertical-align:top; }
+
+</PRE>
+</DIV></DIV>
+
+<P>So the .label selector renders the label tag&rsquo;s text in italic.  The .tdLabel tag specifies that the text should align to the right and top of the table column.</P>
+
+<P>You can override the above selectors by including the same selectors in your page&rsquo;s head section.  For example add the following to the head section of edit.jsp.</P>
+
+<DIV class="code panel" style="border-width: 1px;"><DIV class="codeHeader panelHeader" style="border-bottom-width: 1px;"><B>Override Label Style</B></DIV><DIV class="codeContent panelContent">
+<PRE class="code-html">
+
+<SPAN class="code-tag">&lt;style type=<SPAN class="code-quote">&quot;text/css&quot;</SPAN>&gt;</SPAN>
+  .label {color:blue; font-style:normal; font-weight:bold}
+<SPAN class="code-tag">&lt;/style&gt;</SPAN>
+
+
+</PRE>
+</DIV></DIV>
+
+<P>Now the label tag will render the text in blue, bold, normal (not italics) style.</P>
+
+<H3><A name="Struts2Themes-CreatingAndApplyingYourOwnThemesForStruts2Tags"></A>Creating And Applying Your Own Themes For Struts 2 Tags</H3>
+
+<P>The theme templates (simple, xhtml, css_xhtml) can be found in the Struts 2 core jar file. If you expand (extract the files) the Struts 2 core jar file you'll find folders named template.css_xhtml, template.simple, and template.xhtml. Those folders contain the templates for the three default Struts 2 themes.  In each folder is a file for each Struts 2 tag.  For example if you expand the template.xhtml folder you&rsquo;ll see the select.ftl file.  </P>
+
+<P>The Struts 2 framework uses the FreeMarker template engine to generate the HTML for the Struts 2 tags. That's why the file extension is &quot;.ftl&quot;.  You can learn more about FreeMarker by visiting <A href="http://freemarker.sourceforge.net/" class="external-link" rel="nofollow">http://freemarker.sourceforge.net/</A>. </P>
+
+<P>Also in the template.xhmtl folder is the styles.css file.  This is the styles.css file that your application will use if it uses the xhtml theme.</P>
+
+<P>Let&rsquo;s say we wanted to create our own theme that will change how the Struts 2 checkboxlist tag displays the checkboxes and their labels.  </P>
+
+<P>In the example application I've specified that the form tag should use the xhtml theme (see edit.jsp). The xhtml theme templates for the tags are in the template.xhtml folder (in the Struts 2 core jar file). The template for the Struts 2 checkboxlist tag is appropriately named checkboxlist.ftl. Opening that file you'll see that includes the checkboxlist template that is in the template.simple folder (the xhtml templates extend the templates defined in the template.simple folder). </P>
+
+<P>Opening the checkboxlist.ftl file in the template.simple folder, you'll see that there is only a space between each label and the next checkbox. That is why all the checkboxes are displayed across the width of the browser window. For my custom checkboxlist theme I want to have a break tag after each label tag so that each checkbox and its label will be on their own line.</P>
+
+<P>In the example application there is a folder named src/main/webapp/template/KUTheme (for the Maven version, for the Ant version the path is WebContent/template/KUTheme). In that folder is a checkboxlist.ftl, the contents of which I originally copied from the checkboxlist.ftl that is in the templates.xhtml folder from the struts 2 core jar. </P>
+
+<P>I then modified the checkboxlist.ftl in the KUTheme folder to be:</P>
+
+<DIV class="code panel" style="border-width: 1px;"><DIV class="codeHeader panelHeader" style="border-bottom-width: 1px;"><B>Modified checkboxlist.ftl</B></DIV><DIV class="codeContent panelContent">
+<PRE class="code-html">
+
+<SPAN class="code-tag">&lt;#include <SPAN class="code-quote">&quot;/${parameters.templateDir}/xhtml/controlheader.ftl&quot;</SPAN> /&gt;</SPAN>
+<SPAN class="code-tag">&lt;#include <SPAN class="code-quote">&quot;/${parameters.templateDir}/KUTheme_simple/checkboxlist.ftl&quot;</SPAN> /&gt;</SPAN>
+<SPAN class="code-tag">&lt;#include <SPAN class="code-quote">&quot;/${parameters.templateDir}/xhtml/controlfooter.ftl&quot;</SPAN> /&gt;</SPAN><SPAN class="code-tag">&lt;#nt/&gt;</SPAN>
+
+</PRE>
+</DIV></DIV>
+
+<P>Be sure to note the change to the first line&mdash;using xhtml in the path and the change to the second line&mdash;using KUTheme_simple in the path.</P>
+
+<P>Then in the example application I created a KUTheme_simple folder under webapp/template.  In that folder I created checkboxlist.ftl and copied the contents from template.simple checkboxlist.ftl (again found in the Struts 2 core jar).  After copying the contents to checkboxlist.ftl that is in KUTheme_simple folder, I modified checkboxlist.ftl so that the label tag has a style of red bold text and I added a break tag after each label so that each check box and label will be on its own lin

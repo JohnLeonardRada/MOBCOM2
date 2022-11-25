@@ -1,0 +1,35 @@
+          <A HREF="../../../org/hibernate/criterion/CriteriaQuery.html" title="interface in org.hibernate.criterion">CriteriaQuery</A>&nbsp;criteriaQuery)
+                        throws <A HREF="../../../org/hibernate/HibernateException.html" title="class in org.hibernate">HibernateException</A></PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../org/hibernate/criterion/Projection.html#toGroupSqlString(org.hibernate.Criteria, org.hibernate.criterion.CriteriaQuery)">Projection</A></CODE></B></DD>
+<DD>Render the SQL fragment to be used in the <tt>GROUP BY</tt> clause
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/criterion/Projection.html#toGroupSqlString(org.hibernate.Criteria, org.hibernate.criterion.CriteriaQuery)">toGroupSqlString</A></CODE> in interface <CODE><A HREF="../../../org/hibernate/criterion/Projection.html" title="interface in org.hibernate.criterion">Projection</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../org/hibernate/criterion/SimpleProjection.html#toGroupSqlString(org.hibernate.Criteria, org.hibernate.criterion.CriteriaQuery)">toGroupSqlString</A></CODE> in class <CODE><A HREF="../../../org/hibernate/criterion/SimpleProjection.html" title="class in org.hibernate.criterion">SimpleProjection</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>criteria</CODE> - The local criteria to which this project is attached (for resolution).<DD><CODE>criteriaQuery</CODE> - The overall criteria query instance.
+<DT><B>Returns:</B><DD>The SQL fragment to plug into the <tt>GROUP BY</tt>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/HibernateException.html" title="class in org.hibernate">HibernateException</A></CODE> - Indicates a problem performing the rendering</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/IdentifierProjection.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../.

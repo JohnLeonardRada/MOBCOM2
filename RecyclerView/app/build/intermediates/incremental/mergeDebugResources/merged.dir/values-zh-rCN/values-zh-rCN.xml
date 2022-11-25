@@ -1,0 +1,41 @@
+A HREF="../../../../org/hibernate/type/MaterializedClobType.html" title="class in org.hibernate.type"><CODE>MaterializedClobType</CODE></A> but represented as a Character[] in Java rather than String.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/hibernate/type/ClobType.html" title="class in org.hibernate.type">ClobType</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A type that maps between <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/sql/Types.html?is-external=true#CLOB" title="class or interface in java.sql"><CODE>CLOB</CODE></A> and <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/sql/Clob.html?is-external=true" title="class or interface in java.sql"><CODE>Clob</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/hibernate/type/MaterializedBlobType.html" title="class in org.hibernate.type">MaterializedBlobType</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A type that maps between <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/sql/Types.html?is-external=true#BLOB" title="class or interface in java.sql"><CODE>BLOB</CODE></A> and <code>byte[]</code></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/hibernate/type/MaterializedClobType.html" title="class in org.hibernate.type">MaterializedClobType</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A type that maps between <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/sql/Types.html?is-external=true#CLOB" title="class or interface in java.sql"><CODE>CLOB</CODE></A> and <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/hibernate/type/PrimitiveCharacterArrayClobType.html" title="class in org.hibernate.type">PrimitiveCharacterArrayClobType</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Map a char[] to a Clob</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/hibernate/type/WrappedMaterializedBlobType.html" title="class in org.hibernate.type">WrappedMaterializedBlobType</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A type that maps JDBC <A HREF="http://

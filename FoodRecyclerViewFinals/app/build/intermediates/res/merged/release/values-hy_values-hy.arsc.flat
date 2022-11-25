@@ -1,0 +1,55 @@
+UnknownNamespaceButFullNamespaceSelect() throws Exception {
+        req.setupGetRequestURI("/bo/foo/actionName.action");
+        req.setupGetServletPath("/bo/foo/actionName.action");
+        req.setupGetAttribute(null);
+        req.addExpectedGetAttributeName("javax.servlet.include.servlet_path");
+
+        DefaultActionMapper mapper = new DefaultActionMapper();
+        mapper.setAlwaysSelectFullNamespace("true");
+        ActionMapping mapping = mapper.getMapping(req, configManager);
+
+        assertEquals("/bo/foo", mapping.getNamespace());
+        assertEquals("actionName", mapping.getName());
+        assertNull(mapping.getMethod());
+    }
+
+    public void testGetMappingWithActionName_methodAndName() throws Exception {
+        DefaultActionMapper mapper = new DefaultActionMapper();
+        ActionMapping mapping = mapper.getMappingFromActionName("actionName!add");
+        assertEquals("actionName", mapping.getName());
+        assertEquals("add", mapping.getMethod());
+    }
+
+    public void testGetMappingWithActionName_name() throws Exception {
+        DefaultActionMapper mapper = new DefaultActionMapper();
+        ActionMapping mapping = mapper.getMappingFromActionName("actionName");
+        assertEquals("actionName", mapping.getName());
+        assertEquals(null, mapping.getMethod());
+    }
+
+    public void testGetMappingWithActionName_noDynamicMethod() throws Exception {
+        DefaultActionMapper mapper = new DefaultActionMapper();
+        mapper.setAllowDynamicMethodCalls("false");
+        ActionMapping mapping = mapper.getMappingFromActionName("actionName!add");
+        assertEquals("actionName!add", mapping.getName());
+        assertEquals(null, mapping.getMethod());
+    }
+
+    public void testGetMappingWithActionName_noDynamicMethodColonPrefix() throws Exception {
+
+        Map parameterMap = new HashMap();
+        parameterMap.put(DefaultActionMapper.METHOD_PREFIX + "someMethod", "");
+
+        StrutsMockHttpServletRequest request = new StrutsMockHttpServletRequest();
+        request.setParameterMap(parameterMap);
+        request.setupGetServletPath("/someServletPath.action");
+
+        DefaultActionMapper defaultActionMapper = new DefaultActionMapper();
+        defaultActionMapper.setAllowDynamicMethodCalls("false");
+        ActionMapping actionMapping = defaultActionMapper.getMapping(request, configManager);
+
+        assertEquals("someServletPath", actionMapping.getName());
+        assertEquals(null, actionMapping.getMethod());
+    }
+
+    public void testGetMappingWithActionName_null() throws

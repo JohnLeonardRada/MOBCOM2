@@ -1,0 +1,15 @@
+example/johnleonardrada/foodrecyclerviewfinals/model.java
+ example.johnleonardrada.foodrecyclerviewfinals.model
+example/johnleonardrada/foodrecyclerviewfinals/MainActivity.java
+ example.johnleonardrada.foodrecyclerviewfinals.MainActivity
+ example.johnleonardrada.foodrecyclerviewfinals.MainActivity$1
+ example.johnleonardrada.foodrecyclerviewfinals.MainActivity$2
+example/johnleonardrada/foodrecyclerviewfinals/myadapter.java
+ example.johnleonardrada.foodrecyclerviewfinals.myadapter
+ example.johnleonardrada.foodrecyclerviewfinals.myadapter$myviewholder
+example/johnleonardrada/foodrecyclerviewfinals/fetchdata.java
+ example.johnleonardrada.foodrecyclerviewfinals.fetchdata
+example/johnleonardrada/foodrecyclerviewfinals/BuildConfig.java
+ example.johnleonardrada.foodrecyclerviewfinals.BuildConfig
+example/johnleonardrada/foodrecyclerviewfinals/dbmanager.java
+ example.johnleonardrada.foodrecyclerviewfinals.dbmanager

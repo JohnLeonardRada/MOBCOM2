@@ -1,0 +1,39 @@
+oy</A>, <A HREF="../../../../../org/hibernate/cache/Region.html#getElementCountInMemory()">getElementCountInMemory</A>, <A HREF="../../../../../org/hibernate/cache/Region.html#getElementCountOnDisk()">getElementCountOnDisk</A>, <A HREF="../../../../../org/hibernate/cache/Region.html#getName()">getName</A>, <A HREF="../../../../../org/hibernate/cache/Region.html#getSizeInMemory()">getSizeInMemory</A>, <A HREF="../../../../../org/hibernate/cache/Region.html#getTimeout()">getTimeout</A>, <A HREF="../../../../../org/hibernate/cache/Region.html#nextTimestamp()">nextTimestamp</A>, <A HREF="../../../../../org/hibernate/cache/Region.html#toMap()">toMap</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="EntityRegionAdapter(org.hibernate.cache.Cache, org.hibernate.cfg.Settings, org.hibernate.cache.CacheDataDescription)"><!-- --></A><H3>
+EntityRegionAdapter</H3>
+<PRE>
+public <B>EntityRegionAdapter</B>(<A HREF="../../../../../org/hibernate/cache/Cache.html" title="interface in org.hibernate.cache">Cache</A>&nbsp;underlyingCache,
+                           <A HREF="../../../../../org/hibernate/cfg/Settings.html" title="class in org.hibernate.cfg">Settings</A>&nbsp;settings,
+                           <A HREF="../../../../../org/hibernate/cache/CacheDataDescription.html" title="interface in org.hibernate.cache">CacheDataDescription</A>&nbsp;metadata)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="buildAccessStrategy(org.hibernate.cache.access.AccessType)"><!-- --></A><H3>
+buildAccessStrategy</H3>
+<PRE>
+public <A HREF="../../../../../org/hibernate/cache/access/EntityRegionAccessStrategy.html" title="interface in org.hibernate.cache.access">EntityRegionAccessStrategy</A> <B>buildAccessStrategy</B>(<A HREF="../../../../../org/hibernate/cache/access/AccessT

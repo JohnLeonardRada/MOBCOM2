@@ -1,0 +1,49 @@
+figs.keySet()) {
+                namespaceActionConfigMatchers.put(ns, new ActionConfigMatcher(matcher, namespaceActionConfigs.get(ns), true));
+            }
+        }
+
+
+        /**
+         * Gets the configuration information for an action name, or returns null if the
+         * name is not recognized.
+         *
+         * @param name      the name of the action
+         * @param namespace the namespace for the action or null for the empty namespace, ""
+         * @return the configuration information for action requested
+         */
+        public ActionConfig getActionConfig(String namespace, String name) {
+            ActionConfig config = findActionConfigInNamespace(namespace, name);
+
+            // try wildcarded namespaces
+            if (config == null) {
+                NamespaceMatch match = namespaceMatcher.match(namespace);
+                if (match != null) {
+                    config = findActionConfigInNamespace(match.getPattern(), name);
+
+                    // If config found, place all the matches found in the namespace processing in the action's parameters
+                    if (config != null) {
+                        config = new ActionConfig.Builder(config)
+                                .addParams(match.getVariables())
+                                .build();
+                    }
+                }
+            }
+
+            // fail over to empty namespace
+            if ((config == null) && (namespace != null) && (!"".equals(namespace.trim()))) {
+                config = findActionConfigInNamespace("", name);
+            }
+
+
+            return config;
+        }
+
+        private ActionConfig findActionConfigInNamespace(String namespace, String name) {
+            ActionConfig config = null;
+            if (namespace == null) {
+                namespace = "";
+            }
+            Map<String, ActionConfig> actions = namespaceActionConfigs.get(namespace);
+            if (actions != null) {
+                c

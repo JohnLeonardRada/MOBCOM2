@@ -1,0 +1,20 @@
+ion.html" title="class in org.hibernate.criterion"><B>SimpleProjection</B></A> (implements org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/EnhancedProjection.html" title="interface in org.hibernate.criterion">EnhancedProjection</A>)
+<UL>
+<LI TYPE="circle">org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/AggregateProjection.html" title="class in org.hibernate.criterion"><B>AggregateProjection</B></A><UL>
+<LI TYPE="circle">org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/AvgProjection.html" title="class in org.hibernate.criterion"><B>AvgProjection</B></A><LI TYPE="circle">org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/CountProjection.html" title="class in org.hibernate.criterion"><B>CountProjection</B></A></UL>
+<LI TYPE="circle">org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/IdentifierProjection.html" title="class in org.hibernate.criterion"><B>IdentifierProjection</B></A><LI TYPE="circle">org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/PropertyProjection.html" title="class in org.hibernate.criterion"><B>PropertyProjection</B></A><UL>
+<LI TYPE="circle">org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/Property.html" title="class in org.hibernate.criterion"><B>Property</B></A></UL>
+<LI TYPE="circle">org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/RowCountProjection.html" title="class in org.hibernate.criterion"><B>RowCountProjection</B></A></UL>
+<LI TYPE="circle">org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/SizeExpression.html" title="class in org.hibernate.criterion"><B>SizeExpression</B></A> (implements org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/Criterion.html" title="interface in org.hibernate.criterion">Criterion</A>)
+<LI TYPE="circle">org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/SQLCriterion.html" title="class in org.hibernate.criterion"><B>SQLCriterion</B></A> (implements org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/Criterion.html" title="interface in org.hibernate.criterion">Criterion</A>)
+<LI TYPE="circle">org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/SQLProjection.html" title="class in org.hibernate.criterion"><B>SQLProjection</B></A> (implements org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/Projection.html" title="interface in org.hibernate.criterion">Projection</A>)
+<LI TYPE="circle">org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/Subqueries.html" title="class in org.hibernate.criterion"><B>Subqueries</B></A><LI TYPE="circle">org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/SubqueryExpression.html" title="class in org.hibernate.criterion"><B>SubqueryExpression</B></A> (implements org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/Criterion.html" title="interface in org.hibernate.criterion">Criterion</A>)
+<UL>
+<LI TYPE="circle">org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/ExistsSubqueryExpression.html" title="class in org.hibernate.criterion"><B>ExistsSubqueryExpression</B></A><LI TYPE="circle">org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/PropertySubqueryExpression.html" title="class in org.hibernate.criterion"><B>PropertySubqueryExpression</B></A><LI TYPE="circle">org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/SimpleSubqueryExpression.html" title="class in org.hibernate.criterion"><B>SimpleSubqueryExpression</B></A></UL>
+</UL>
+</UL>
+<H2>
+Interface Hierarchy
+</H2>
+<UL>
+<LI TYPE="circle">org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/CriteriaQuery.html" title="interface in org.hibernate.criterion"><B>CriteriaQuery</B></A><LI TYPE="circle">org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/CriteriaSpeci

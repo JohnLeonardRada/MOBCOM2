@@ -1,0 +1,83 @@
+/B><DT>extends <A HREF="../../../../javax/xml/ws/EndpointReference.html" title="class in javax.xml.ws">EndpointReference</A></DL>
+</PRE>
+
+<P>
+This class represents a W3C Addressing EndpointReferece which is
+ a remote reference to a web service endpoint that supports the
+ W3C WS-Addressing 1.0 - Core Recommendation.
+ <p>
+ Developers should use this class in their SEIs if they want to
+ pass/return endpoint references that represent the W3C WS-Addressing
+ recommendation.
+ <p>
+ JAXB will use the JAXB annotations and bind this class to XML infoset
+ that is consistent with that defined by WS-Addressing.  See
+ <a href="http://www.w3.org/TR/2006/REC-ws-addr-core-20060509/">
+ WS-Addressing</a> 
+ for more information on WS-Addressing EndpointReferences.
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>JAX-WS 2.1</DD>
+</DL>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../javax/xml/ws/wsaddressing/W3CEndpointReference.html#NS">NS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../javax/xml/ws/wsaddressing/W3CEndpointReference.html#W3CEndpointReference()">W3CEndpointReference</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../javax/xml/ws/wsaddressing/W3CEndpointReference.html#W3CEndpointReference(javax.xml.transform.Source)">W3CEndpointReference</A></B>(javax.xml.transform.Source&nbsp;source)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an EPR from infoset representation</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../javax/xml/ws/wsaddressing/W3CEndpointReference.ht

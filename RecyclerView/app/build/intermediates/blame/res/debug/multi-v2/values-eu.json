@@ -1,0 +1,21 @@
+html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;prefix2)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../org/hibernate/envers/entities/mapper/id/IdMapper.html#addIdsEqualToQuery(org.hibernate.envers.tools.query.Parameters, java.lang.String, java.lang.String)">IdMapper</A></CODE></B></DD>
+<DD>Adds query statements, which contains restrictions, which express the property that the id of the entity
+ with alias prefix1, is equal to the id of the entity with alias prefix2 (the entity is the same).
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/hibernate/envers/entities/mapper/id/IdMapper.html#addIdsEqualToQuery(org.hibernate.envers.tools.query.Parameters, java.lang.String, java.lang.String)">addIdsEqualToQuery</A></CODE> in interface <CODE><A HREF="../../../../../../org/hibernate/envers/entities/mapper/id/IdMapper.html" title="interface in org.hibernate.envers.entities.mapper.id">IdMapper</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>parameters</CODE> - Parameters, to which to add the statements.<DD><CODE>prefix1</CODE> - First alias of the entity + prefix to add to the properties.<DD><CODE>prefix2</CODE> - Second alias of the entity + prefix to add to the properties.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addIdsEqualToQuery(org.hibernate.envers.tools.query.Parameters, java.lang.String, org.hibernate.envers.entities.mapper.id.IdMapper, java.lang.String)"><!-- --></A><H3>
+addIdsEqualToQuery</H3>
+<PRE>
+public void <B>addIdsEqualToQuery</B>(<A HREF="../../../../../../org/hibernate/envers/tools/query/Parameters.html" title="class in org.hibernate.envers.tools.query">Parameters</A>&nbsp;parameters,
+                               <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;prefix1,
+                               <A HREF="../../../../../../o

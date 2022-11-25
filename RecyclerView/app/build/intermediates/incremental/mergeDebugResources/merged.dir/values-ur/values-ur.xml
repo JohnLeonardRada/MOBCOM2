@@ -1,0 +1,59 @@
+lectionJoinWalker</H2>
+<PRE>
+<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../org/hibernate/loader/JoinWalker.html" title="class in org.hibernate.loader">org.hibernate.loader.JoinWalker</A>
+      <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><B>org.hibernate.loader.collection.CollectionJoinWalker</B>
+</PRE>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../org/hibernate/loader/collection/BasicCollectionJoinWalker.html" title="class in org.hibernate.loader.collection">BasicCollectionJoinWalker</A>, <A HREF="../../../../org/hibernate/loader/collection/OneToManyJoinWalker.html" title="class in org.hibernate.loader.collection">OneToManyJoinWalker</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>CollectionJoinWalker</B><DT>extends <A HREF="../../../../org/hibernate/loader/JoinWalker.html" title="class in org.hibernate.loader">JoinWalker</A></DL>
+</PRE>
+
+<P>
+Superclass of walkers for collection initializers
+<P>
+
+<P>
+<DL>
+<DT><B>Author:</B></DT>
+  <DD>Gavin King</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../../org/hibernate/loader/collection/CollectionLoader.html" title="class in org.hibernate.loader.collection"><CODE>CollectionLoader</CODE></A>, 
+<A HREF="../../../../org/hibernate/loader/collection/OneToManyJoinWalker.html" title="class in org.hibernate.loader.collection"><CODE>OneToManyJoinWalker</CODE></A>, 
+<A HREF="../../../../org/hibernate/loader/collection/BasicCollectionJoinWalker.html" title="class in org.hibernate.loader.collection"><CODE>BasicCollectionJoinWalker</CODE></A></DL>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="nested_classes_inherited_from_class_org.hibernate.loader.JoinWalker"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from class org.hibernate.loader.<A HREF="../../../../org/hibernate/loader/JoinWalker.html" title="class in org.hibernate.loader">JoinWalker</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../org/hibernate/loader/JoinWalker.AssociationInitCallback.html" title="interface in org.hibernate.loader">JoinWalker.AssociationInitCallback</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.hibernate.loader.JoinWalker"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR=

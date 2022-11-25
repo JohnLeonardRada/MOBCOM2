@@ -1,0 +1,463 @@
+a.lang">String</A>&nbsp;unqualifiedName,
+             <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;defaultPackage)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../org/hibernate/cfg/HbmBinder.html#getEntityName(org.dom4j.Element, org.hibernate.cfg.Mappings)">getEntityName</A></B>(org.dom4j.Element&nbsp;elem,
+              <A HREF="../../../org/hibernate/cfg/Mappings.html" title="interface in org.hibernate.cfg">Mappings</A>&nbsp;model)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../org/hibernate/cfg/HbmBinder.html#getExtendsNeeded(org.hibernate.util.xml.XmlDocument, org.hibernate.cfg.Mappings)">getExtendsNeeded</A></B>(<A HREF="../../../org/hibernate/util/xml/XmlDocument.html" title="interface in org.hibernate.util.xml">XmlDocument</A>&nbsp;metadataXml,
+                 <A HREF="../../../org/hibernate/cfg/Mappings.html" title="interface in org.hibernate.cfg">Mappings</A>&nbsp;mappings)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For the given document, locate all extends attributes which refer to
+ entities (entity-name or class-name) not defined within said document.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../org/hibernate/FlushMode.html" title="class in org.hibernate">FlushMode</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../org/hibernate/cfg/HbmBinder.html#getFlushMode(java.lang.String)">getFlushMode</A></B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;flushMode)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../org/hibernate/cfg/HbmBinder.html#getMetas(org.dom4j.Element, java.util.Map, boolean)">getMetas</A></B>(org.dom4j.Element&nbsp;node,
+         <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&nbsp;inheritedMeta,
+         boolean&nbsp;onlyInheritable)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../org/hibernate/cfg/HbmBinder.html#getParameterTypes(org.dom4j.Element)">getParameterTypes</A></B>(org.dom4j.Element&nbsp;queryElem)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../org/hibernate/cfg/HbmBinder.html#getTypeFromXML(org.dom4j.Element)">getTypeFromXML</A></B>(org.dom4j.Element&nbsp;node)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="bindRoot(org.hibernate.util.xml.XmlDocument, org.hibernate.cfg.Mappings, java.util.Map, java.util.Set)"><!-- --></A><H3>
+bindRoot</H3>
+<PRE>
+public static void <B>bindRoot</B>(<A HREF="../../../org/hibernate/util/xml/XmlDocument.html" title="interface in org.hibernate.util.xml">XmlDocument</A>&nbsp;metadataXml,
+                            <A HREF="../../../org/hibernate/cfg/Mappings.html" title="interface in org.hibernate.cfg">Mappings</A>&nbsp;mappings,
+                            <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&nbsp;inheritedMetas,
+                            <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</A>&lt;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;entityNames)
+                     throws <A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></PRE>
+<DL>
+<DD>The main contract into the hbm.xml-based binder. Performs necessary binding operations
+ represented by the given DOM.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>metadataXml</CODE> - The DOM to be parsed and bound.<DD><CODE>mappings</CODE> - Current bind state.<DD><CODE>inheritedMetas</CODE> - Any inherited meta-tag information.<DD><CODE>entityNames</CODE> - Any state
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="bindRootClass(org.dom4j.Element, org.hibernate.mapping.RootClass, org.hibernate.cfg.Mappings, java.util.Map)"><!-- --></A><H3>
+bindRootClass</H3>
+<PRE>
+public static void <B>bindRootClass</B>(org.dom4j.Element&nbsp;node,
+                                 <A HREF="../../../org/hibernate/mapping/RootClass.html" title="class in org.hibernate.mapping">RootClass</A>&nbsp;rootClass,
+                                 <A HREF="../../../org/hibernate/cfg/Mappings.html" title="interface in org.hibernate.cfg">Mappings</A>&nbsp;mappings,
+                                 <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&nbsp;inheritedMetas)
+                          throws <A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></PRE>
+<DL>
+<DD>Responsible for perfoming the bind operation related to an &lt;class/&gt; mapping element.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>node</CODE> - The DOM Element for the &lt;class/&gt; element.<DD><CODE>rootClass</CODE> - The mapping instance to which to bind the information.<DD><CODE>mappings</CODE> - The current bind state.<DD><CODE>inheritedMetas</CODE> - Any inherited meta-tag information.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="bindClass(org.dom4j.Element, org.hibernate.mapping.PersistentClass, org.hibernate.cfg.Mappings, java.util.Map)"><!-- --></A><H3>
+bindClass</H3>
+<PRE>
+public static void <B>bindClass</B>(org.dom4j.Element&nbsp;node,
+                             <A HREF="../../../org/hibernate/mapping/PersistentClass.html" title="class in org.hibernate.mapping">PersistentClass</A>&nbsp;persistentClass,
+                             <A HREF="../../../org/hibernate/cfg/Mappings.html" title="interface in org.hibernate.cfg">Mappings</A>&nbsp;mappings,
+                             <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&nbsp;inheritedMetas)
+                      throws <A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="bindUnionSubclass(org.dom4j.Element, org.hibernate.mapping.UnionSubclass, org.hibernate.cfg.Mappings, java.util.Map)"><!-- --></A><H3>
+bindUnionSubclass</H3>
+<PRE>
+public static void <B>bindUnionSubclass</B>(org.dom4j.Element&nbsp;node,
+                                     <A HREF="../../../org/hibernate/mapping/UnionSubclass.html" title="class in org.hibernate.mapping">UnionSubclass</A>&nbsp;unionSubclass,
+                                     <A HREF="../../../org/hibernate/cfg/Mappings.html" title="interface in org.hibernate.cfg">Mappings</A>&nbsp;mappings,
+                                     <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&nbsp;inheritedMetas)
+                              throws <A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="bindSubclass(org.dom4j.Element, org.hibernate.mapping.Subclass, org.hibernate.cfg.Mappings, java.util.Map)"><!-- --></A><H3>
+bindSubclass</H3>
+<PRE>
+public static void <B>bindSubclass</B>(org.dom4j.Element&nbsp;node,
+                                <A HREF="../../../org/hibernate/mapping/Subclass.html" title="class in org.hibernate.mapping">Subclass</A>&nbsp;subclass,
+                                <A HREF="../../../org/hibernate/cfg/Mappings.html" title="interface in org.hibernate.cfg">Mappings</A>&nbsp;mappings,
+                                <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&nbsp;inheritedMetas)
+                         throws <A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="bindJoinedSubclass(org.dom4j.Element, org.hibernate.mapping.JoinedSubclass, org.hibernate.cfg.Mappings, java.util.Map)"><!-- --></A><H3>
+bindJoinedSubclass</H3>
+<PRE>
+public static void <B>bindJoinedSubclass</B>(org.dom4j.Element&nbsp;node,
+                                      <A HREF="../../../org/hibernate/mapping/JoinedSubclass.html" title="class in org.hibernate.mapping">JoinedSubclass</A>&nbsp;joinedSubclass,
+                                      <A HREF="../../../org/hibernate/cfg/Mappings.html" title="interface in org.hibernate.cfg">Mappings</A>&nbsp;mappings,
+                                      <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&nbsp;inheritedMetas)
+                               throws <A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="bindColumns(org.dom4j.Element, org.hibernate.mapping.SimpleValue, boolean, boolean, java.lang.String, org.hibernate.cfg.Mappings)"><!-- --></A><H3>
+bindColumns</H3>
+<PRE>
+public static void <B>bindColumns</B>(org.dom4j.Element&nbsp;node,
+                               <A HREF="../../../org/hibernate/mapping/SimpleValue.html" title="class in org.hibernate.mapping">SimpleValue</A>&nbsp;simpleValue,
+                               boolean&nbsp;isNullable,
+                               boolean&nbsp;autoColumn,
+                               <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;propertyPath,
+                               <A HREF="../../../org/hibernate/cfg/Mappings.html" title="interface in org.hibernate.cfg">Mappings</A>&nbsp;mappings)
+                        throws <A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="bindSimpleValue(org.dom4j.Element, org.hibernate.mapping.SimpleValue, boolean, java.lang.String, org.hibernate.cfg.Mappings)"><!-- --></A><H3>
+bindSimpleValue</H3>
+<PRE>
+public static void <B>bindSimpleValue</B>(org.dom4j.Element&nbsp;node,
+                                   <A HREF="../../../org/hibernate/mapping/SimpleValue.html" title="class in org.hibernate.mapping">SimpleValue</A>&nbsp;simpleValue,
+                                   boolean&nbsp;isNullable,
+                                   <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;path,
+                                   <A HREF="../../../org/hibernate/cfg/Mappings.html" title="interface in org.hibernate.cfg">Mappings</A>&nbsp;mappings)
+                            throws <A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="bindProperty(org.dom4j.Element, org.hibernate.mapping.Property, org.hibernate.cfg.Mappings, java.util.Map)"><!-- --></A><H3>
+bindProperty</H3>
+<PRE>
+public static void <B>bindProperty</B>(org.dom4j.Element&nbsp;node,
+                                <A HREF="../../../org/hibernate/mapping/Property.html" title="class in org.hibernate.mapping">Property</A>&nbsp;property,
+                                <A HREF="../../../org/hibernate/cfg/Mappings.html" title="interface in org.hibernate.cfg">Mappings</A>&nbsp;mappings,
+                                <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&nbsp;inheritedMetas)
+                         throws <A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="bindCollection(org.dom4j.Element, org.hibernate.mapping.Collection, java.lang.String, java.lang.String, org.hibernate.cfg.Mappings, java.util.Map)"><!-- --></A><H3>
+bindCollection</H3>
+<PRE>
+public static void <B>bindCollection</B>(org.dom4j.Element&nbsp;node,
+                                  <A HREF="../../../org/hibernate/mapping/Collection.html" title="class in org.hibernate.mapping">Collection</A>&nbsp;collection,
+                                  <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;className,
+                                  <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;path,
+                                  <A HREF="../../../org/hibernate/cfg/Mappings.html" title="interface in org.hibernate.cfg">Mappings</A>&nbsp;mappings,
+                                  <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&nbsp;inheritedMetas)
+                           throws <A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></PRE>
+<DL>
+<DD>Called for all collections
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="bindManyToOne(org.dom4j.Element, org.hibernate.mapping.ManyToOne, java.lang.String, boolean, org.hibernate.cfg.Mappings)"><!-- --></A><H3>
+bindManyToOne</H3>
+<PRE>
+public static void <B>bindManyToOne</B>(org.dom4j.Element&nbsp;node,
+                                 <A HREF="../../../org/hibernate/mapping/ManyToOne.html" title="class in org.hibernate.mapping">ManyToOne</A>&nbsp;manyToOne,
+                                 <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;path,
+                                 boolean&nbsp;isNullable,
+                                 <A HREF="../../../org/hibernate/cfg/Mappings.html" title="interface in org.hibernate.cfg">Mappings</A>&nbsp;mappings)
+                          throws <A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="bindAny(org.dom4j.Element, org.hibernate.mapping.Any, boolean, org.hibernate.cfg.Mappings)"><!-- --></A><H3>
+bindAny</H3>
+<PRE>
+public static void <B>bindAny</B>(org.dom4j.Element&nbsp;node,
+                           <A HREF="../../../org/hibernate/mapping/Any.html" title="class in org.hibernate.mapping">Any</A>&nbsp;any,
+                           boolean&nbsp;isNullable,
+                           <A HREF="../../../org/hibernate/cfg/Mappings.html" title="interface in org.hibernate.cfg">Mappings</A>&nbsp;mappings)
+                    throws <A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="bindOneToOne(org.dom4j.Element, org.hibernate.mapping.OneToOne, java.lang.String, boolean, org.hibernate.cfg.Mappings)"><!-- --></A><H3>
+bindOneToOne</H3>
+<PRE>
+public static void <B>bindOneToOne</B>(org.dom4j.Element&nbsp;node,
+                                <A HREF="../../../org/hibernate/mapping/OneToOne.html" title="class in org.hibernate.mapping">OneToOne</A>&nbsp;oneToOne,
+                                <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;path,
+                                boolean&nbsp;isNullable,
+                                <A HREF="../../../org/hibernate/cfg/Mappings.html" title="interface in org.hibernate.cfg">Mappings</A>&nbsp;mappings)
+                         throws <A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="bindOneToMany(org.dom4j.Element, org.hibernate.mapping.OneToMany, org.hibernate.cfg.Mappings)"><!-- --></A><H3>
+bindOneToMany</H3>
+<PRE>
+public static void <B>bindOneToMany</B>(org.dom4j.Element&nbsp;node,
+                                 <A HREF="../../../org/hibernate/mapping/OneToMany.html" title="class in org.hibernate.mapping">OneToMany</A>&nbsp;oneToMany,
+                                 <A HREF="../../../org/hibernate/cfg/Mappings.html" title="interface in org.hibernate.cfg">Mappings</A>&nbsp;mappings)
+                          throws <A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="bindColumn(org.dom4j.Element, org.hibernate.mapping.Column, boolean)"><!-- --></A><H3>
+bindColumn</H3>
+<PRE>
+public static void <B>bindColumn</B>(org.dom4j.Element&nbsp;node,
+                              <A HREF="../../../org/hibernate/mapping/Column.html" title="class in org.hibernate.mapping">Column</A>&nbsp;column,
+                              boolean&nbsp;isNullable)
+                       throws <A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="bindArray(org.dom4j.Element, org.hibernate.mapping.Array, java.lang.String, java.lang.String, org.hibernate.cfg.Mappings, java.util.Map)"><!-- --></A><H3>
+bindArray</H3>
+<PRE>
+public static void <B>bindArray</B>(org.dom4j.Element&nbsp;node,
+                             <A HREF="../../../org/hibernate/mapping/Array.html" title="class in org.hibernate.mapping">Array</A>&nbsp;array,
+                             <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;prefix,
+                             <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;path,
+                             <A HREF="../../../org/hibernate/cfg/Mappings.html" title="interface in org.hibernate.cfg">Mappings</A>&nbsp;mappings,
+                             <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&nbsp;inheritedMetas)
+                      throws <A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></PRE>
+<DL>
+<DD>Called for arrays and primitive arrays
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="bindComposite(org.dom4j.Element, org.hibernate.mapping.Component, java.lang.String, boolean, org.hibernate.cfg.Mappings, java.util.Map)"><!-- --></A><H3>
+bindComposite</H3>
+<PRE>
+public static void <B>bindComposite</B>(org.dom4j.Element&nbsp;node,
+                                 <A HREF="../../../org/hibernate/mapping/Component.html" title="class in org.hibernate.mapping">Component</A>&nbsp;component,
+                                 <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;path,
+                                 boolean&nbsp;isNullable,
+                                 <A HREF="../../../org/hibernate/cfg/Mappings.html" title="interface in org.hibernate.cfg">Mappings</A>&nbsp;mappings,
+                                 <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&nbsp;inheritedMetas)
+                          throws <A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="bindCompositeId(org.dom4j.Element, org.hibernate.mapping.Component, org.hibernate.mapping.PersistentClass, java.lang.String, org.hibernate.cfg.Mappings, java.util.Map)"><!-- --></A><H3>
+bindCompositeId</H3>
+<PRE>
+public static void <B>bindCompositeId</B>(org.dom4j.Element&nbsp;node,
+                                   <A HREF="../../../org/hibernate/mapping/Component.html" title="class in org.hibernate.mapping">Component</A>&nbsp;component,
+                                   <A HREF="../../../org/hibernate/mapping/PersistentClass.html" title="class in org.hibernate.mapping">PersistentClass</A>&nbsp;persistentClass,
+                                   <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;propertyName,
+                                   <A HREF="../../../org/hibernate/cfg/Mappings.html" title="interface in org.hibernate.cfg">Mappings</A>&nbsp;mappings,
+                                   <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&nbsp;inheritedMetas)
+                            throws <A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="bindComponent(org.dom4j.Element, org.hibernate.mapping.Component, java.lang.String, java.lang.String, java.lang.String, boolean, boolean, org.hibernate.cfg.Mappings, java.util.Map, boolean)"><!-- --></A><H3>
+bindComponent</H3>
+<PRE>
+public static void <B>bindComponent</B>(org.dom4j.Element&nbsp;node,
+                                 <A HREF="../../../org/hibernate/mapping/Component.html" title="class in org.hibernate.mapping">Component</A>&nbsp;component,
+                                 <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;ownerClassName,
+                                 <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;parentProperty,
+                                 <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;path,
+                                 boolean&nbsp;isNullable,
+                                 boolean&nbsp;isEmbedded,
+                                 <A HREF="../../../org/hibernate/cfg/Mappings.html" title="interface in org.hibernate.cfg">Mappings</A>&nbsp;mappings,
+                                 <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&nbsp;inheritedMetas,
+                                 boolean&nbsp;isIdentifierMapper)
+                          throws <A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTypeFromXML(org.dom4j.Element)"><!-- --></A><H3>
+getTypeFromXML</H3>
+<PRE>
+public static <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getTypeFromXML</B>(org.dom4j.Element&nbsp;node)
+                             throws <A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClassProperties(org.dom4j.Element, org.hibernate.mapping.PersistentClass, org.hibernate.cfg.Mappings, java.util.Map)"><!-- --></A><H3>
+createClassProperties</H3>
+<PRE>
+protected static void <B>createClassProperties</B>(org.dom4j.Element&nbsp;node,
+                                            <A HREF="../../../org/hibernate/mapping/PersistentClass.html" title="class in org.hibernate.mapping">PersistentClass</A>&nbsp;persistentClass,
+                                            <A HREF="../../../org/hibernate/cfg/Mappings.html" title="interface in org.hibernate.cfg">Mappings</A>&nbsp;mappings,
+                                            <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&nbsp;inheritedMetas)
+                                     throws <A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/MappingException.html" title="class in org.hibernate">MappingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClassProperties(org.dom4j.Element, org.hibernate.mapping.Persistent

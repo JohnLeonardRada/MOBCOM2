@@ -1,0 +1,56 @@
+ces when actually compiling and
+ executing the query.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../org/hibernate/criterion/class-use/CriteriaSpecification.html#org.hibernate.criterion"><B>CriteriaSpecification</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../org/hibernate/criterion/class-use/Criterion.html#org.hibernate.criterion"><B>Criterion</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An object-oriented representation of a query criterion that may be used 
+ as a restriction in a <tt>Criteria</tt> query.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../org/hibernate/criterion/class-use/DetachedCriteria.html#org.hibernate.criterion"><B>DetachedCriteria</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Some applications need to create criteria queries in "detached
+ mode", where the Hibernate session is not available.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../org/hibernate/criterion/class-use/Disjunction.html#org.hibernate.criterion"><B>Disjunction</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../org/hibernate/criterion/class-use/EnhancedProjection.html#org.hibernate.criterion"><B>EnhancedProjection</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An "enhanced" Projection for a <A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate"><CODE>Criteria</CODE></A> query.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../org/hibernate/criterion/class-use/Example.html#org.hibernate.criterion"><B>Example</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support for query by example.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../org/hibernate/criterion/class-use/Example.PropertySelector.html#org.hibernate.criterion"><B>Example.PropertySelector</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A strategy for choosing property values for inclusion in the query
+ criteria</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../org/hibernate/criterion/class-use/IdentifierProjection.html#org.hibernate.criterion"><B>IdentifierProjection</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A property value, or grouped property value</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../org/hibernate/criterion/class-use/Junction.html#or

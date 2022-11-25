@@ -1,0 +1,4 @@
+ion"><B>LikeExpression</B></A> (implements org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/Criterion.html" title="interface in org.hibernate.criterion">Criterion</A>)
+<LI TYPE="circle">org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/LogicalExpression.html" title="class in org.hibernate.criterion"><B>LogicalExpression</B></A> (implements org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/Criterion.html" title="interface in org.hibernate.criterion">Criterion</A>)
+<LI TYPE="circle">org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/MatchMode.html" title="class in org.hibernate.criterion"><B>MatchMode</B></A> (implements java.io.<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A>)
+<LI TYPE="circle">org.hibernate.criterion.<A HREF=".

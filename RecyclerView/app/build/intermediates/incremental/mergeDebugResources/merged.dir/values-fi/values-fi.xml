@@ -1,0 +1,35 @@
+code-keyword">throws</SPAN> Exception {
+     <SPAN class="code-keyword">return</SPAN> <SPAN class="code-quote">&quot;done&quot;</SPAN>;
+ }
+
+ <SPAN class="code-keyword">public</SPAN> <SPAN class="code-object">String</SPAN> doDefault() <SPAN class="code-keyword">throws</SPAN> Exception {
+     ServletActionContext.getRequest().setAttribute(<SPAN class="code-quote">&quot;stringByAction&quot;</SPAN>, <SPAN class="code-quote">&quot;This is a <SPAN class="code-object">String</SPAN> put in by the action's doDefault()&quot;</SPAN>);
+     <SPAN class="code-keyword">return</SPAN> <SPAN class="code-quote">&quot;done&quot;</SPAN>;
+ }
+}
+</PRE>
+</DIV></DIV>
+<DIV class="code panel" style="border-width: 1px;"><DIV class="codeContent panelContent">
+<PRE class="code-xml"><SPAN class="code-tag">&lt;xwork&gt;</SPAN>
+   ....
+  <SPAN class="code-tag">&lt;action name=<SPAN class="code-quote">&quot;actionTagAction1&quot;</SPAN> class=<SPAN class="code-quote">&quot;tmjee.testing.ActionTagAction&quot;</SPAN>&gt;</SPAN>
+      <SPAN class="code-tag">&lt;result name=<SPAN class="code-quote">&quot;done&quot;</SPAN>&gt;</SPAN>success.jsp<SPAN class="code-tag">&lt;/result&gt;</SPAN>
+  <SPAN class="code-tag">&lt;/action&gt;</SPAN>
+   <SPAN class="code-tag">&lt;action name=<SPAN class="code-quote">&quot;actionTagAction2&quot;</SPAN> class=<SPAN class="code-quote">&quot;tmjee.testing.ActionTagAction&quot;</SPAN> method=<SPAN class="code-quote">&quot;default&quot;</SPAN>&gt;</SPAN>
+      <SPAN class="code-tag">&lt;result name=<SPAN class="code-quote">&quot;done&quot;</SPAN>&gt;</SPAN>success.jsp<SPAN class="code-tag">&lt;/result&gt;</SPAN>
+  <SPAN class="code-tag">&lt;/action&gt;</SPAN>
+   ....
+<SPAN class="code-tag">&lt;/xwork&gt;</SPAN>
+</PRE>
+</DIV></DIV>
+<DIV class="code panel" style="border-width: 1px;"><DIV class="codeContent panelContent">
+<PRE class="code-xml"><SPAN class="code-tag">&lt;div&gt;</SPAN>The following action tag will execute result and include it in this page<SPAN class="code-tag">&lt;/div&gt;</SPAN>
+<SPAN class="code-tag">&lt;br /&gt;</SPAN>
+<SPAN class="code-tag">&lt;s:action name=<SPAN class="code-quote">&quot;actionTagAction&quot;</SPAN> executeResult=<SPAN class="code-quote">&quot;true&quot;</SPAN> /&gt;</SPAN>
+<SPAN class="code-tag">&lt;br /&gt;</SPAN>
+<SPAN class="code-tag">&lt;div&gt;</SPAN>The following action tag will do the same as above, but invokes method specialMethod in action<SPAN class="code-tag">&lt;/div&gt;</SPAN>
+<SPAN class="code-tag">&lt;br /&gt;</SPAN>
+<SPAN class="code-tag">&lt;s:action name=<SPAN class="code-quote">&quot;actionTagAction!specialMethod&quot;</SPAN> executeResult=<SPAN class="code-quote">&quot;true&quot;</SPAN> /&gt;</SPAN>
+<SPAN class="code-tag">&lt;br /&gt;</SPAN>
+<SPAN class="code-tag">&lt;div&gt;</SPAN>The following action tag will not execute result, but put a String in request scope
+     under an id <SPAN class="code-quote">&quot;stringByAction&quot;</SPAN> which will be retrieved using property tag<SPA

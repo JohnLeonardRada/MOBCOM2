@@ -1,0 +1,62 @@
+"><A HREF="../../../org/hibernate/criterion/SimpleProjection.html" title="class in org.hibernate.criterion">org.hibernate.criterion.SimpleProjection</A>
+      <IMG SRC="../../../resources/inherit.gif" ALT="extended by "><B>org.hibernate.criterion.IdentifierProjection</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A>, <A HREF="../../../org/hibernate/criterion/EnhancedProjection.html" title="interface in org.hibernate.criterion">EnhancedProjection</A>, <A HREF="../../../org/hibernate/criterion/Projection.html" title="interface in org.hibernate.criterion">Projection</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>IdentifierProjection</B><DT>extends <A HREF="../../../org/hibernate/criterion/SimpleProjection.html" title="class in org.hibernate.criterion">SimpleProjection</A></DL>
+</PRE>
+
+<P>
+A property value, or grouped property value
+<P>
+
+<P>
+<DL>
+<DT><B>Author:</B></DT>
+  <DD>Gavin King</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../serialized-form.html#org.hibernate.criterion.IdentifierProjection">Serialized Form</A></DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../org/hibernate/criterion/IdentifierProjection.html#IdentifierProjection()">IdentifierProjection</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../org/hibernate/criterion/IdentifierProjection.html#IdentifierProjection(boolean)">IdentifierProjection</A></B>(boolean&nbsp;grouped)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../org/hibernate/type/Type.html" title="interface in org.hibernate.type">Type</A>[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../org/hibernate/criterion/IdentifierProjection.html#getTypes(org.hibernate.Criteria, org.hibernate.criterion.CriteriaQuery)">getTypes</A></B>(<A HREF="../../../org/hibernate/Criteria.h

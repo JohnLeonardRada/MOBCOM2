@@ -1,0 +1,4 @@
+onDescription.html" title="class in org.hibernate.envers.entities">RelationDescription</A></CODE></FONT></TD>
+<TD><CODE><B>CriteriaTools.</B><B><A HREF="../../../../../org/hibernate/envers/query/criteria/CriteriaTools.html#getRelatedEntity(org.hibernate.envers.configuration.AuditConfiguration, java.lang.String, java.lang.String)">getRelatedEntity</A></B>(<A HREF="../../../../../org/hibernate/envers/configuration/AuditConfiguration.html" title="class in org.hibernate.envers.configuration">AuditConfiguration</A>&nbsp;verCfg,
+                 <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;entityName,
+      

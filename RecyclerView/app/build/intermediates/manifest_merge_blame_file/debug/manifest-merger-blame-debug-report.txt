@@ -1,0 +1,54 @@
+ernate.criterion.MatchMode</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>MatchMode</B><DT>extends <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A><DT>implements <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A></DL>
+</PRE>
+
+<P>
+Represents an strategy for matching strings using "like".
+<P>
+
+<P>
+<DL>
+<DT><B>Author:</B></DT>
+  <DD>Gavin King</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../org/hibernate/criterion/Example.html#enableLike(org.hibernate.criterion.MatchMode)"><CODE>Example.enableLike(MatchMode)</CODE></A>, 
+<A HREF="../../../serialized-form.html#org.hibernate.criterion.MatchMode">Serialized Form</A></DL>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../org/hibernate/criterion/MatchMode.html" title="class in org.hibernate.criterion">MatchMode</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../org/hibernate/criterion/MatchMode.html#ANYWHERE">ANYWHERE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Match the pattern anywhere in the string</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../org/hibernate/criterion/MatchMode.html" title="class in org.hibernate.criterion">MatchMode</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../org/hibernate/criterion/MatchMode.html#END">END</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Match the end of the string to the pattern</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../org/hibernate/criterion/MatchMode.html" title="class in org.hibernate.criterion">MatchMode</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../org/hibernate/criterion/MatchMode.html#EXACT">EXACT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M

@@ -1,0 +1,8 @@
+.html" title="interface in org.hibernate.envers.entities.mapper">CompositeMapperBuilder</A>, <A HREF="../../../../../org/hibernate/envers/entities/mapper/PropertyMapper.html" title="interface in org.hibernate.envers.entities.mapper">PropertyMapper</A>, <A HREF="../../../../../org/hibernate/envers/entities/mapper/SimpleMapperBuilder.html" title="interface in org.hibernate.envers.entities.mapper">SimpleMapperBuilder</A></DD>
+</DL>
+<DL>
+<DT><B>All Known Implementing Classes:</B> <DD><A HREF="../../../../../org/hibernate/envers/entities/mapper/MultiPropertyMapper.html" title="class in org.hibernate.envers.entities.mapper">MultiPropertyMapper</A>, <A HREF="../../../../../org/hibernate/envers/entities/mapper/SubclassPropertyMapper.html" title="class in org.hibernate.envers.entities.mapper">SubclassPropertyMapper</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public interface <B>

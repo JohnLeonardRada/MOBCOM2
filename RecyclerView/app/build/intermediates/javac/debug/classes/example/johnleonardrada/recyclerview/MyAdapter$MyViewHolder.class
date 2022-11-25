@@ -1,0 +1,19 @@
+1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getTypedValues(org.hibernate.Criteria, org.hibernate.criterion.CriteriaQuery)"><!-- --></A><H3>
+getTypedValues</H3>
+<PRE>
+public <A HREF="../../../org/hibernate/engine/TypedValue.html" title="class in org.hibernate.engine">TypedValue</A>[] <B>getTypedValues</B>(<A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A>&nbsp;criteria,
+                                   <A HREF="../../../org/hibernate/criterion/CriteriaQuery.html" title="interface in org.hibernate.criterion">CriteriaQuery</A>&nbsp;criteriaQuery)
+                            throws <A HREF="../../../org/hibernate/HibernateException.html" title="class in org.hibernate">HibernateException</A></PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../org/hibernate/criterion/Criterion.html#getTypedValues(org.hibernate.Criteria, org.hibernate.criterion.CriteriaQuery)">Criterion</A></CODE></B></DD>
+<DD>Return typed values for all parameters in the rendered SQL fragment
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/criterion/Criterion.html#getTyp

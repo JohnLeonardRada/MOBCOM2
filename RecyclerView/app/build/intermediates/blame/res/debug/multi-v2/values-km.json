@@ -1,0 +1,63 @@
+ ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ELException()"><!-- --></A><H3>
+ELException</H3>
+<PRE>
+public <B>ELException</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Creates an ELException with no detail message.
+<P>
+</DL>
+<HR>
+
+<A NAME="ELException(java.lang.String)"><!-- --></A><H3>
+ELException</H3>
+<PRE>
+public <B>ELException</B>(java.lang.String&nbsp;pMessage)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Creates an ELException with the provided detail message.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>pMessage</CODE> - the detail message</DL>
+</DL>
+<HR>
+
+<A NAME="ELException(java.lang.Throwable)"><!-- --></A><H3>
+ELException</H3>
+<PRE>
+public <B>ELException</B>(java.lang.Throwable&nbsp;pRootCause)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Creates an ELException with the given root cause.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>pRootCause</CODE> - the originating cause of this exception</DL>
+</DL>
+<HR>
+
+<A NAME="ELException(java.lang.String, java.lang.Throwable)"><!-- --></A><H3>
+ELException</H3>
+<PRE>
+public <B>ELException</B>(java.lang.String&nbsp;pMessage,
+                   java.lang.Throwable&nbsp;pRootCause)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Creates an ELException with the given detail message and root cause.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>pMessage</CODE> - the detail message<DD><CODE>pRootCause</CODE> - the originating cause of this exception</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></

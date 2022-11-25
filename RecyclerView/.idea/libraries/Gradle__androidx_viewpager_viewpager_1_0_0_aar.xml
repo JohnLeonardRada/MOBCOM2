@@ -1,0 +1,4 @@
+nate.envers.entities.mapper">ExtendedPropertyMapper</A></DD>
+</DL>
+<DL>
+<DT><B>All Known Implementing Classes:</B> <DD><A HREF="../../../../../org/hibernate/envers/entities/mapper/relation/AbstractCollectionMapper.html" title="class in org.hibernate.envers.entities.mapper.relation">AbstractCollectionMapper</A>, <A HREF="../../../../../org/hibernate/envers/entities/mapper/relation/BasicCollectionMapper.html" title="class in org.hibernate.envers.entities.mapper.relation">BasicCollectionMapper</A>, <A HREF="../../../../../org/hibernate/envers/entities/mapper/ComponentPropertyMapper.html" title="class in org.hibernate.envers.entities.mapper">ComponentPropertyM

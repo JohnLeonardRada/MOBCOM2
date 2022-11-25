@@ -1,0 +1,26 @@
+../org/hibernate/envers/entities/mapper/MultiPropertyMapper.html" title="class in org.hibernate.envers.entities.mapper">MultiPropertyMapper</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/hibernate/envers/entities/mapper/SubclassPropertyMapper.html" title="class in org.hibernate.envers.entities.mapper">SubclassPropertyMapper</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A mapper which maps from a parent mapper and a "main" one, but adds only to the "main".</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/hibernate/envers/entities/mapper/package-summary.html">org.hibernate.envers.entities.mapper</A> that return <A HREF="../../../../../../org/hibernate/envers/entities/mapper/CompositeMapperBuilder.html" title="interface in org.hibernate.envers.entities.mapper">CompositeMapperBuilder</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/hibernate/envers/entities/mapper/CompositeMapperBuilder.html" title="interface in org.hibernate.envers.entities.mapper">CompositeMapperBuilder</A></CODE></FONT></TD>
+<TD><CODE><B>SubclassPropertyMapper.</B><B><A HREF="../../../../../../org/hibernate/envers/entities/mapper/SubclassPropertyMapper.html#addComponent(org.hibernate.envers.entities.PropertyData, java.lang.String)">addComponent</A></B>(<A HREF="../../../../../../org/hibernate/envers/entities/PropertyData.html" title="class in org.hibernate.envers.entities">PropertyData</A>&nbsp;propertyData,
+  

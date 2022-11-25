@@ -1,0 +1,33 @@
+un.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../org/hibernate/criterion/IdentifierProjection.html#toGroupSqlString(org.hibernate.Criteria, org.hibernate.criterion.CriteriaQuery)">toGroupSqlString</A></B>(<A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A>&nbsp;criteria,
+                 <A HREF="../../../org/hibernate/criterion/CriteriaQuery.html" title="interface in org.hibernate.criterion">CriteriaQuery</A>&nbsp;criteriaQuery)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Render the SQL fragment to be used in the <tt>GROUP BY</tt> clause</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../org/hibernate/criterion/IdentifierProjection.html#toSqlString(org.hibernate.Criteria, int, org.hibernate.criterion.CriteriaQuery)">toSqlString</A></B>(<A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A>&nbsp;criteria,
+            int&nbsp;position,
+            <A HREF="../../../org/hibernate/criterion/CriteriaQuery.html" title="interface in org.hibernate.criterion">CriteriaQuery</A>&nbsp;criteriaQuery)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Render the SQL fragment to be used in the <tt>SELECT</tt> clause.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../org/hibernate/criterion/IdentifierProjection.html#toString()">toString</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.hibernate.criterion.SimpleProjection"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.hibernate.criterion.<A HREF="../../../org/hibernate/criterion/SimpleProjection.html" title="class in org.hibernate.criterion">SimpleProjection</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../org/hibernate/criterion/SimpleProjection.html#as(java.lang.String)">as</A>, <A HREF="../../../org/hibernate/criterion/SimpleProjection.html#getAliases()">getAliases</A>, <A HREF="../../../org/hibernate/criterion/SimpleProjection.html#getColumnAliases(int)">getColumnAliases</A>, <A HREF="../../../org/hibernate/criterion/SimpleProjection.html#getColumnAliases(int, org.hibernate.Criteria, org.hibernate.criterion.CriteriaQuery)">getColumnAliases</A>, <A HREF="../../../org/hibernate/criterion/SimpleProjection.html#getColumnAliases(java.lang.String, int)">getColumnAliases</A>, <A HREF="../../../org/hibernate/criterion/SimpleProjection.html#getColumnAliases(java.lang.String, int, org.hibernate.Criteria, org.hibernate.criterion.CriteriaQuery)">getColumnAliases</A>, <A HREF="../../../org/hibernate/criterion/SimpleProjection.html#getColumnCount(org.hibernate.Criteria, org.hibernate.criterion.CriteriaQuery)">getColumnCo

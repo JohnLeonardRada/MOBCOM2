@@ -1,0 +1,4 @@
+IGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></FONT></TD>
+<TD><CODE><B>MiddleMapKeyIdComponentMapper.</B><B><A HREF="../../../../../org/hibernate/envers/entities/mapper/relation/component/MiddleMapKeyIdComponentMapper.html#mapToObjectFromFullMap(org.hibernate.envers.entities.EntityInstantiator, java.util.Map, java.lang.Object, java.lang.Number)">mapToObjectFromFullMap</A></B>(<A HREF="../../../../../org/hibernate/envers/entities/EntityInstantiator.html" title="class in org.hibernate.envers.entities">EntityInstantiator</A>&nbsp;entityInstantiator,
+                       <A HR

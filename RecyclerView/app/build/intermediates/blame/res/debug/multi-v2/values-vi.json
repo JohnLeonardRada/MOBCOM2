@@ -1,0 +1,42 @@
+er(javax.jms.Topic, java.lang.String, java.lang.String, javax.jms.ServerSessionPool, int)">createDurableConnectionConsumer</A>, <A HREF="../../javax/jms/Connection.html#getClientID()">getClientID</A>, <A HREF="../../javax/jms/Connection.html#getExceptionListener()">getExceptionListener</A>, <A HREF="../../javax/jms/Connection.html#getMetaData()">getMetaData</A>, <A HREF="../../javax/jms/Connection.html#setClientID(java.lang.String)">setClientID</A>, <A HREF="../../javax/jms/Connection.html#setExceptionListener(javax.jms.ExceptionListener)">setExceptionListener</A>, <A HREF="../../javax/jms/Connection.html#start()">start</A>, <A HREF="../../javax/jms/Connection.html#stop()">stop</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="createXAQueueSession()"><!-- --></A><H3>
+createXAQueueSession</H3>
+<PRE>
+<A HREF="../../javax/jms/XAQueueSession.html" title="interface in javax.jms">XAQueueSession</A> <B>createXAQueueSession</B>()
+                                    throws <A HREF="../../javax/jms/JMSException.html" title="class in javax.jms">JMSException</A></PRE>
+<DL>
+<DD>Creates an <CODE>XAQueueSession</CODE> object.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a newly created <CODE>XAQueueSession</CODE>
+<DT><B>Throws:</B>
+<DD><CODE>JMSException</CODE> - if the <CODE>XAQueueConnection</CODE> object 
+                         fails to create an XA queue session due to some
+                         internal error.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createQueueSession(boolean, int)"><!-- --></A><H3>
+createQueueSession</H3>
+<PRE>
+<A HREF="../../javax/jms/QueueSession.html" title="interface in javax.jms">QueueSession</A> <B>createQueueSes

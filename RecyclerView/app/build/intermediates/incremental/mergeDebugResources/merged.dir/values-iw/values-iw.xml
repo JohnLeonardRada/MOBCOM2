@@ -1,0 +1,53 @@
+ead";
+    permission java.util.PropertyPermission
+     "org.apache.el.parser.COERCE_TO_ZERO", "read";
+
+    // The cookie code needs these.
+    permission java.util.PropertyPermission
+     "org.apache.catalina.STRICT_SERVLET_COMPLIANCE", "read";
+    permission java.util.PropertyPermission
+     "org.apache.tomcat.util.http.ServerCookie.STRICT_NAMING", "read";
+    permission java.util.PropertyPermission
+     "org.apache.tomcat.util.http.ServerCookie.FWD_SLASH_IS_SEPARATOR", "read";
+
+    // Applications using Comet need to be able to access this package
+    permission java.lang.RuntimePermission "accessClassInPackage.org.apache.catalina.comet";
+
+    // Applications using the legacy WebSocket implementation need to be able to access this package
+    permission java.lang.RuntimePermission "accessClassInPackage.org.apache.catalina.websocket";
+
+    // Applications using the JSR-356 WebSocket implementation need to be able to access these packages
+    permission java.lang.RuntimePermission "accessClassInPackage.org.apache.tomcat.websocket";
+    permission java.lang.RuntimePermission "accessClassInPackage.org.apache.tomcat.websocket.server";
+};
+
+
+// The Manager application needs access to the following packages to support the
+// session display functionality. It also requires the custom Tomcat
+// DeployXmlPermission to enable the use of META-INF/context.xml
+// These settings support the following configurations:
+// - default CATALINA_HOME == CATALINA_BASE
+// - CATALINA_HOME != CATALINA_BASE, per instance Manager in CATALINA_BASE
+// - CATALINA_HOME != CATALINA_BASE, shared Manager in CATALINA_HOME
+grant codeBase "file:${catalina.base}/webapps/manager/-" {
+    permission java.lang.RuntimePermission "accessClassInPackage.org.apache.catalina";
+    permission java.lang.RuntimePermission "accessClassInPackage.org.apache.catalina.ha.session";
+    permission java.lang.RuntimePermission "accessClassInPackage.org.apache.catalina.manager";
+    permission java.lang.RuntimePermission "accessClassInPackage.org.apache.catalina.manager.util";
+    permission java.lang.RuntimePermission "accessClassInPackage.org.apache.catalina.util";
+    permission org.apache.catalina.security.DeployXmlPermission "manager";
+};
+grant codeBase "file:${catalina.home}/webapps/manager/-" {
+    permission java.lang.RuntimePermission "accessClassInPackage.org.apache.catalina";
+    permission java.lang.RuntimePermission "accessClassInPackage.org.apache.catalina.ha.session";
+    permission java.lang.RuntimePermission "accessClassInPackage.org.apache.catalina.manager";
+    permission java.lang.RuntimePermission "accessClassInPackage.org.apache.catalina.manager.util";
+    permission java.lang.RuntimePermission "accessClassInPackage.org.apache.catalina.util";
+    permission org.apache.catalina.security.DeployXmlPermission "manager";
+};
+
+// The Host Manager application needs the custom Tomcat DeployXmlPermission to
+// enable the use of META-INF/context.xml
+// These settings support the following configurations:
+// - default CATALINA_HOME == CATALINA_BASE
+// - CATALINA_HOME != CATALINA_BASE, per instance Host Manag

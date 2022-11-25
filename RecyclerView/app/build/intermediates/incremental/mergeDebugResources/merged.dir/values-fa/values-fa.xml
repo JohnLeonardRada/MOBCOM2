@@ -1,0 +1,79 @@
+PAN class="code-quote">&quot;myAction&quot;</SPAN> <SPAN class="code-keyword">null</SPAN> outside the tag? &lt;s:property value=<SPAN class="code-quote">&quot;#myAction == <SPAN class="code-keyword">null</SPAN>&quot;</SPAN> /&gt;
+</PRE>
+</DIV></DIV>
+
+<P>Will print:<BR>
+Is &quot;myAction&quot; null inside the tag? true<BR>
+Is &quot;myAction&quot; null outside the tag? false</P>
+
+<H2><A name="action-Parameters"></A>Parameters</H2>
+
+<P><TABLE width="100%">
+	<TR>
+		<TD colspan="6"><H4>Dynamic Attributes Allowed:</H4> false</TD>
+	</TR>
+	<TR>
+		<TD colspan="6">&nbsp;</TD>
+	</TR>
+	<TR>
+		<TH align="left" valign="top"><H4>Name</H4></TH>
+		<TH align="left" valign="top"><H4>Required</H4></TH>
+		<TH align="left" valign="top"><H4>Default</H4></TH>
+		<TH align="left" valign="top"><H4>Evaluated</H4></TH>
+		<TH align="left" valign="top"><H4>Type</H4></TH>
+		<TH align="left" valign="top"><H4>Description</H4></TH>
+	</TR>
+		<TR>
+			<TD align="left" valign="top">executeResult</TD>
+			<TD align="left" valign="top">false</TD>
+			<TD align="left" valign="top">false</TD>
+			<TD align="left" valign="top">false</TD>
+			<TD align="left" valign="top">Boolean</TD>
+			<TD align="left" valign="top">Whether the result of this action (probably a view) should be executed/rendered</TD>
+		</TR>
+		<TR>
+			<TD align="left" valign="top">flush</TD>
+			<TD align="left" valign="top">false</TD>
+			<TD align="left" valign="top">true</TD>
+			<TD align="left" valign="top">false</TD>
+			<TD align="left" valign="top">Boolean</TD>
+			<TD align="left" valign="top">Whether the writer should be flush upon end of action component tag, default to true</TD>
+		</TR>
+		<TR>
+			<TD align="left" valign="top">id</TD>
+			<TD align="left" valign="top">false</TD>
+			<TD align="left" valign="top"></TD>
+			<TD align="left" valign="top">false</TD>
+			<TD align="left" valign="top">String</TD>
+			<TD align="left" valign="top">Deprecated. Use 'var' instead</TD>
+		</TR>
+		<TR>
+			<TD align="left" valign="top">ignoreContextParams</TD>
+			<TD align="left" valign="top">false</TD>
+			<TD align="left" valign="top">false</TD>
+			<TD align="left" valign="top">false</TD>
+			<TD align="left" valign="top">Boolean</TD>
+			<TD align="left" valign="top">Whether the request parameters are to be included when the action is invoked</TD>
+		</TR>
+		<TR>
+			<TD align="left" valign="top">name</TD>
+			<TD align="left" valign="top"><STRONG>true</STRONG></TD>
+			<TD align="left" valign="top"></TD>
+			<TD align="left" valign="top">false</TD>
+			<TD align="left" valign="top">String</TD>
+			<TD align="left" valign="top">Name of the action to be executed (without the extension suffix eg. .action)</TD>
+		</TR>
+		<TR>
+			<TD align="left" valign="top">namespace</TD>
+			<TD align="left" valign="top">false</TD>
+			<TD align="left" valign="top">namespace from where tag is used</TD>
+			<TD align="left" valign="top">false</TD>
+			<TD align="left" valign="top">String</TD>
+			<TD align="left" valign="top">Namespace for action to call</TD>
+		</TR>
+		<TR>
+			<TD align="left" valign="top">rethrowException</TD>
+			<TD align="left" valign="top">false</TD>
+			<TD align="left" valign="top">false</TD>
+			<TD align="left" valign="top">false</TD>
+		

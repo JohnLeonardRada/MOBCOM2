@@ -1,0 +1,7 @@
+r.html" title="interface in org.hibernate.envers.entities.mapper">SimpleMapperBuilder</A></DD>
+</DL>
+<DL>
+<DT><B>All Known Subinterfaces:</B> <DD><A HREF="../../../../../org/hibernate/envers/entities/mapper/ExtendedPropertyMapper.html" title="interface in org.hibernate.envers.entities.mapper">ExtendedPropertyMapper</A></DD>
+</DL>
+<DL>
+<DT><B>All Known Implementing Classes:</B> <DD><A HREF="../../../../../org/hibernate/envers/entities/mapper/ComponentPropertyMapper.html" title="class in org.hibernate.envers.entities.mapper">ComponentPropertyMapper</A>, <A HREF="../../../../../org/hibernate/envers/entities/mapper/MultiPropertyMapper.html" title="class in org.hibernate.envers.entities.mapper">Multi

@@ -1,0 +1,40 @@
+api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.hibernate.envers.entities.mapper.id.AbstractIdMapper</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../org/hibernate/envers/entities/mapper/id/IdMapper.html" title="interface in org.hibernate.envers.entities.mapper.id">IdMapper</A></DD>
+</DL>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../../org/hibernate/envers/entities/mapper/id/AbstractCompositeIdMapper.html" title="class in org.hibernate.envers.entities.mapper.id">AbstractCompositeIdMapper</A>, <A HREF="../../../../../../org/hibernate/envers/entities/mapper/id/SingleIdMapper.html" title="class in org.hibernate.envers.entities.mapper.id">SingleIdMapper</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>AbstractIdMapper</B><DT>extends <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A><DT>implements <A HREF="../../../../../../org/hibernate/envers/entities/mapper/id/IdMapper.html" title="interface in org.hibernate.envers.entities.mapper.id">IdMapper</A></DL>
+</PRE>
+
+<P>
+<DL>
+<DT><B>Author:</B></DT>
+  <DD>Adam Warski (adam at warski dot org)</DD>
+</DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/hibernate/envers/entities/mapper/id/AbstractIdMapper.html#AbstractIdMapper()">AbstractIdMapper</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHO

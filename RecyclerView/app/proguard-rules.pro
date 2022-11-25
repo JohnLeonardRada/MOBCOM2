@@ -1,0 +1,4 @@
+der.PropertyAuditingData)">CollectionMetadataGenerator</A></B>(<A HREF="../../../../../../org/hibernate/envers/configuration/metadata/AuditMetadataGenerator.html" title="class in org.hibernate.envers.configuration.metadata">AuditMetadataGenerator</A>&nbsp;mainGenerator,
+                            <A HREF="../../../../../../org/hibernate/mapping/Collection.html" title="class in org.hibernate.mapping">Collection</A>&nbsp;propertyValue,
+                            <A HREF="../../../../../../org/hibernate/envers/entities/mapper/CompositeMapperBuilder.html" title="interface in org.hibernate.envers.entities.mapper">CompositeMapperBuilder</A>&nbsp;currentMapper,
+                            <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-exter

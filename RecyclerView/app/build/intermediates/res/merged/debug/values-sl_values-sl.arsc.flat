@@ -1,0 +1,77 @@
+wn", "chroot", "lstat",
+        "startfile", "mkfifo", "mknod", "pathconf", "access"
+    ]:
+        if hasattr(_os, name):
+            locals()[name] = _mk_single_path_wrapper(name)
+
+    def _mk_single_with_return(name):
+        original = getattr(_os, name)
+
+        def wrap(self, path, *args, **kw):
+            if self._active:
+                path = self._remap_input(name, path, *args, **kw)
+                return self._remap_output(name, original(path, *args, **kw))
+            return original(path, *args, **kw)
+
+        return wrap
+
+    for name in ['readlink', 'tempnam']:
+        if hasattr(_os, name):
+            locals()[name] = _mk_single_with_return(name)
+
+    def _mk_query(name):
+        original = getattr(_os, name)
+
+        def wrap(self, *args, **kw):
+            retval = original(*args, **kw)
+            if self._active:
+                return self._remap_output(name, retval)
+            return retval
+
+        return wrap
+
+    for name in ['getcwd', 'tmpnam']:
+        if hasattr(_os, name):
+            locals()[name] = _mk_query(name)
+
+    def _validate_path(self, path):
+        """Called to remap or validate any path, whether input or output"""
+        return path
+
+    def _remap_input(self, operation, path, *args, **kw):
+        """Called for path inputs"""
+        return self._validate_path(path)
+
+    def _remap_output(self, operation, path):
+        """Called for path outputs"""
+        return self._validate_path(path)
+
+    def _remap_pair(self, operation, src, dst, *args, **kw):
+        """Called for path pairs like rename, link, and symlink operations"""
+        return (
+            self._remap_input(operation + '-from', src, *args, **kw),
+            self._remap_input(operation + '-to', dst, *args, **kw)
+        )
+
+
+if hasattr(os, 'devnull'):
+    _EXCEPTIONS = [os.devnull]
+else:
+    _EXCEPTIONS = []
+
+
+class DirectorySandbox(AbstractSandbox):
+    """Restrict operations to a single subdirectory - pseudo-chroot"""
+
+    write_ops = dict.fromkeys([
+        "open", "chmod", "chown", "mkdir", "remove", "unlink", "rmdir",
+        "utime", "lchown", "chroot", "mkfifo", "mknod", "tempnam",
+    ])
+
+    _exception_patterns = [
+        # Allow lib2to3 to attempt to save a pickled grammar object (#121)
+        r'.*lib2to3.*\.pickle$',
+    ]
+    "exempt writing to paths that match the pattern"
+
+    def __init__(self, sandbox, e

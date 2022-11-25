@@ -1,0 +1,22 @@
+./org/hibernate/envers/tools/query/Parameters.html" title="class in org.hibernate.envers.tools.query">Parameters</A>&nbsp;parameters,
+                               <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;id,
+                               <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;prefix,
+                               boolean&nbsp;equals)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../org/hibernate/envers/entities/mapper/id/IdMapper.html#addIdEqualsToQuery(org.hibernate.envers.tools.query.Parameters, java.lang.Object, java.lang.String, boolean)">IdMapper</A></CODE></B></DD>
+<DD>Adds query statements, which contains restrictions, which express the property that the id of the entity
+ with alias prefix, is equal to the given object.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/hibernate/envers/entities/mapper/id/IdMapper.html#addIdEqualsToQuery(org.hibernate.envers.tools.query.Parameters, java.lang.Object, java.lang.String, boolean)">addIdEqualsToQuery</A></CODE> in interface <CODE><A HREF="../../../../../../org/hibernate/envers/entities/mapper/id/IdMapper.html" title="interface in org.hibernate.envers.entities.mapper.id">IdMapper</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>parameters</CODE> - Parameters, to which to add the statements.<DD><CODE>id</CODE> - Value of id.<DD><CODE>prefix</CODE> - Prefix to add to the properties (may be null).<DD><CODE>equals</CODE> - Should this query express the "=" relation or the "<>" relation.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addNamedIdEqualsToQuery(org.hibernate.envers.tools.query.Parameters, java.lang.String, boolean)"><!-- --></A><H3>
+addNamedIdEqualsToQuery</H3>
+<PRE>
+public void <B>addNamedIdEqualsToQuery</

@@ -1,0 +1,52 @@
+essStrategy</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contract for managing transactional and concurrent access to cached entity
+ data.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../../org/hibernate/cache/access/class-use/SoftLock.html#org.hibernate.cache.impl.bridge"><B>SoftLock</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Moved up from inner definition on the now deprecated
+ <A HREF="../../../../org/hibernate/cache/CacheConcurrencyStrategy.html" title="interface in org.hibernate.cache"><CODE>CacheConcurrencyStrategy</CODE></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.hibernate.cache.infinispan"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Classes in <A HREF="../../../../org/hibernate/cache/access/package-summary.html">org.hibernate.cache.access</A> used by <A HREF="../../../../org/hibernate/cache/infinispan/package-summary.html">org.hibernate.cache.infinispan</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../../org/hibernate/cache/access/class-use/AccessType.html#org.hibernate.cache.infinispan"><B>AccessType</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The types of access strategies available.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.hibernate.cache.infinispan.access"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Classes in <A HREF="../../../../org/hibernate/cache/access/package-summary.html">org.hibernate.cache.access</A> used by <A HREF="../../../../org/hibernate/cache/infinispan/access/package-summary.html">org.hibernate.cache.infinispan.access</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../../org/hibernate/cache/access/class-use/SoftLock.html#org.hibernate.cache.infinispan.access"><B>SoftLock</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Moved up from inner definition on the now deprecated
+ <A HREF="../../../../org/hibernate/cache/CacheConcurrencyStrategy.html" title="interface in org.hibernate.cache"><CODE>CacheConcurrencyStrategy</CODE></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.hibernate.cache.infinispan.collection"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Classes in <A HREF="../../../../org/hibernate/cache/access/package-summary.html">org.hibernate.cache.access</A> used by <A HREF="../../../../org/hibernate/cache/infinispan/collection/package-summary.html">org.hibernate.cache

@@ -1,0 +1,21 @@
+�として本リファレンスドキュメントをご利用ください。 アプリケーショ"
+"ンのデザインに関する詳細、 ステップバイステップによる解説が必要な場合は、 "
+"<emphasis>Hibernate in Action</emphasis> (http://www.manning.com/bauer) をお"
+"読みになってもいいでしょう。 また、 http://caveatemptor.hibernate.org から "
+"Hibernate in Action のサンプルアプリケーションをダウンロードすることもできま"
+"す。"
+
+#. Tag: para
+#: preface.xml:130
+#, no-c-format
+msgid "FAQs are answered on the Hibernate website."
+msgstr "よくある質問とその答え (FAQ) は Hibernate ウェブサイトでご覧ください。"
+
+#. Tag: para
+#: preface.xml:135
+#, fuzzy, no-c-format
+msgid ""
+"Links to third party demos, examples, and tutorials are maintained on the "
+"Hibernate website."
+msgstr ""
+"サードパーティのデモ、 サンプル、 チュートリアルなどは Hibernate のウェブサイ"

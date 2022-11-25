@@ -1,0 +1,16 @@
+/A>&nbsp;referencingPropertyName,
+                     <A HREF="../../../../../org/hibernate/collection/PersistentCollection.html" title="interface in org.hibernate.collection">PersistentCollection</A>&nbsp;newColl,
+                     <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A>&nbsp;oldColl,
+                     <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A>&nbsp;id)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maps collection changes</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/hibernate/envers/entities/mapper/SinglePropertyMapper.html#mapToEntityFromMap(org.hibernate.envers.configuration.AuditConfiguration, java.lang.Object, java.util.Map, java.lang.Object, org.hibernate.envers.reader.AuditReaderImplementor, java.lang.Number)">mapToEntityFromMap</A></B>(<A HREF="../../../../../org/hibernate/envers/configuration/AuditConfiguration.html" title="class in org.hibernate.envers.configuration">AuditConfiguration</A>&nbsp;verCfg,
+                   <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;obj,
+                   <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&nbsp;data,
+                   <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;primaryKey,
+                   <A HREF="../../../../../org/hibernate/envers/reader/AuditReaderImplementor.html" title="interface in org.hibernate.envers.re

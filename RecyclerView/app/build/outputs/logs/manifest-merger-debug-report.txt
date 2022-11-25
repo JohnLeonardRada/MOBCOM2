@@ -1,0 +1,445 @@
+xec.args=\"list\"</command>"
+msgstr ""
+
+#. Tag: title
+#: tutorial.xml:630
+#, no-c-format
+msgid "Part 2 - Mapping associations"
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:632
+#, no-c-format
+msgid "So far we have mapped a single persistent entity class to a table in isolation. Let's expand on that a bit and add some class associations. We will add people to the application and store a list of events in which they participate."
+msgstr ""
+
+#. Tag: title
+#: tutorial.xml:640
+#, no-c-format
+msgid "Mapping the Person class"
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:642
+#, no-c-format
+msgid "The first cut of the <literal>Person</literal> class looks like this:"
+msgstr ""
+
+#. Tag: programlisting
+#: tutorial.xml:646
+#, no-c-format
+msgid ""
+      "<![CDATA[package org.hibernate.tutorial.domain;\n"
+      "\n"
+      "public class Person {\n"
+      "\n"
+      "    private Long id;\n"
+      "    private int age;\n"
+      "    private String firstname;\n"
+      "    private String lastname;\n"
+      "\n"
+      "    public Person() {}\n"
+      "\n"
+      "    // Accessor methods for all properties, private setter for 'id'\n"
+      "\n"
+      "}]]>"
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:648
+#, no-c-format
+msgid "Save this to a file named <filename>src/main/java/org/hibernate/tutorial/domain/Person.java</filename>"
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:653
+#, no-c-format
+msgid "Next, create the new mapping file as <filename>src/main/resources/org/hibernate/tutorial/domain/Person.hbm.xml</filename>"
+msgstr ""
+
+#. Tag: programlisting
+#: tutorial.xml:658
+#, no-c-format
+msgid ""
+      "<![CDATA[<hibernate-mapping package=\"org.hibernate.tutorial.domain\">\n"
+      "\n"
+      "    <class name=\"Person\" table=\"PERSON\">\n"
+      "        <id name=\"id\" column=\"PERSON_ID\">\n"
+      "            <generator class=\"native\"/>\n"
+      "        </id>\n"
+      "        <property name=\"age\"/>\n"
+      "        <property name=\"firstname\"/>\n"
+      "        <property name=\"lastname\"/>\n"
+      "    </class>\n"
+      "\n"
+      "</hibernate-mapping>]]>"
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:660
+#, no-c-format
+msgid "Finally, add the new mapping to Hibernate's configuration:"
+msgstr ""
+
+#. Tag: programlisting
+#: tutorial.xml:664
+#, no-c-format
+msgid ""
+      "<![CDATA[<mapping resource=\"events/Event.hbm.xml\"/>\n"
+      "<mapping resource=\"events/Person.hbm.xml\"/>]]>"
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:666
+#, no-c-format
+msgid "Create an association between these two entities. Persons can participate in events, and events have participants. The design questions you have to deal with are: directionality, multiplicity, and collection behavior."
+msgstr ""
+
+#. Tag: title
+#: tutorial.xml:676
+#, no-c-format
+msgid "A unidirectional Set-based association"
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:678
+#, no-c-format
+msgid "By adding a collection of events to the <literal>Person</literal> class, you can easily navigate to the events for a particular person, without executing an explicit query - by calling <literal>Person#getEvents</literal>. Multi-valued associations are represented in Hibernate by one of the Java Collection Framework contracts; here we choose a <interfacename>java.util.Set</interfacename> because the collection will not contain duplicate elements and the ordering is not relevant to our examples:"
+msgstr ""
+
+#. Tag: programlisting
+#: tutorial.xml:689
+#, no-c-format
+msgid ""
+      "<![CDATA[public class Person {\n"
+      "\n"
+      "    private Set events = new HashSet();\n"
+      "\n"
+      "    public Set getEvents() {\n"
+      "        return events;\n"
+      "    }\n"
+      "\n"
+      "    public void setEvents(Set events) {\n"
+      "        this.events = events;\n"
+      "    }\n"
+      "}]]>"
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:691
+#, no-c-format
+msgid "Before mapping this association, let's consider the other side. We could just keep this unidirectional or create another collection on the <literal>Event</literal>, if we wanted to be able to navigate it from both directions. This is not necessary, from a functional perspective. You can always execute an explicit query to retrieve the participants for a particular event. This is a design choice left to you, but what is clear from this discussion is the multiplicity of the association: \"many\" valued on both sides is called a <emphasis>many-to-many</emphasis> association. Hence, we use Hibernate's many-to-many mapping:"
+msgstr ""
+
+#. Tag: programlisting
+#: tutorial.xml:704
+#, no-c-format
+msgid ""
+      "<![CDATA[<class name=\"Person\" table=\"PERSON\">\n"
+      "    <id name=\"id\" column=\"PERSON_ID\">\n"
+      "        <generator class=\"native\"/>\n"
+      "    </id>\n"
+      "    <property name=\"age\"/>\n"
+      "    <property name=\"firstname\"/>\n"
+      "    <property name=\"lastname\"/>\n"
+      "\n"
+      "    <set name=\"events\" table=\"PERSON_EVENT\">\n"
+      "        <key column=\"PERSON_ID\"/>\n"
+      "        <many-to-many column=\"EVENT_ID\" class=\"Event\"/>\n"
+      "    </set>\n"
+      "\n"
+      "</class>]]>"
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:706
+#, no-c-format
+msgid "Hibernate supports a broad range of collection mappings, a <literal>set</literal> being most common. For a many-to-many association, or <emphasis>n:m</emphasis> entity relationship, an association table is required. Each row in this table represents a link between a person and an event. The table name is decalred using the <literal>table</literal> attribute of the <literal>set</literal> element. The identifier column name in the association, for the person side, is defined with the <literal>key</literal> element, the column name for the event's side with the <literal>column</literal> attribute of the <literal>many-to-many</literal>. You also have to tell Hibernate the class of the objects in your collection (the class on the other side of the collection of references)."
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:722
+#, no-c-format
+msgid "The database schema for this mapping is therefore:"
+msgstr ""
+
+#. Tag: programlisting
+#: tutorial.xml:726
+#, no-c-format
+msgid ""
+      "<![CDATA[\n"
+      "    _____________        __________________\n"
+      "   |             |      |                  |       _____________\n"
+      "   |   EVENTS    |      |   PERSON_EVENT   |      |             |\n"
+      "   |_____________|      |__________________|      |    PERSON   |\n"
+      "   |             |      |                  |      |_____________|\n"
+      "   | *EVENT_ID   | <--> | *EVENT_ID        |      |             |\n"
+      "   |  EVENT_DATE |      | *PERSON_ID       | <--> | *PERSON_ID  |\n"
+      "   |  TITLE      |      |__________________|      |  AGE        |\n"
+      "   |_____________|                                |  FIRSTNAME  |\n"
+      "                                                  |  LASTNAME   |\n"
+      "                                                  |_____________|\n"
+      " ]]>"
+msgstr ""
+
+#. Tag: title
+#: tutorial.xml:731
+#, no-c-format
+msgid "Working the association"
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:733
+#, no-c-format
+msgid "Now we will bring some people and events together in a new method in <literal>EventManager</literal>:"
+msgstr ""
+
+#. Tag: programlisting
+#: tutorial.xml:737
+#, no-c-format
+msgid ""
+      "<![CDATA[    private void addPersonToEvent(Long personId, Long eventId) {\n"
+      "        Session session = HibernateUtil.getSessionFactory().getCurrentSession();\n"
+      "        session.beginTransaction();\n"
+      "\n"
+      "        Person aPerson = (Person) session.load(Person.class, personId);\n"
+      "        Event anEvent = (Event) session.load(Event.class, eventId);\n"
+      "        aPerson.getEvents().add(anEvent);\n"
+      "\n"
+      "        session.getTransaction().commit();\n"
+      "    }]]>"
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:739
+#, no-c-format
+msgid "After loading a <literal>Person</literal> and an <literal>Event</literal>, simply modify the collection using the normal collection methods. There is no explicit call to <literal>update()</literal> or <literal>save()</literal>; Hibernate automatically detects that the collection has been modified and needs to be updated. This is called <emphasis>automatic dirty checking</emphasis>. You can also try it by modifying the name or the date property of any of your objects. As long as they are in <emphasis>persistent</emphasis> state, that is, bound to a particular Hibernate <interfacename>org.hibernate.Session</interfacename>, Hibernate monitors any changes and executes SQL in a write-behind fashion. The process of synchronizing the memory state with the database, usually only at the end of a unit of work, is called <emphasis>flushing</emphasis>. In our code, the unit of work ends with a commit, or rollback, of the database transaction."
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:758
+#, no-c-format
+msgid "You can load person and event in different units of work. Or you can modify an object outside of a <interfacename>org.hibernate.Session</interfacename>, when it is not in persistent state (if it was persistent before, this state is called <emphasis>detached</emphasis>). You can even modify a collection when it is detached:"
+msgstr ""
+
+#. Tag: programlisting
+#: tutorial.xml:767
+#, no-c-format
+msgid ""
+      "<![CDATA[    private void addPersonToEvent(Long personId, Long eventId) {\n"
+      "        Session session = HibernateUtil.getSessionFactory().getCurrentSession();\n"
+      "        session.beginTransaction();\n"
+      "\n"
+      "        Person aPerson = (Person) session\n"
+      "                .createQuery(\"select p from Person p left join fetch p.events where p.id = :pid\")\n"
+      "                .setParameter(\"pid\", personId)\n"
+      "                .uniqueResult(); // Eager fetch the collection so we can use it detached\n"
+      "        Event anEvent = (Event) session.load(Event.class, eventId);\n"
+      "\n"
+      "        session.getTransaction().commit();\n"
+      "\n"
+      "        // End of first unit of work\n"
+      "\n"
+      "        aPerson.getEvents().add(anEvent); // aPerson (and its collection) is detached\n"
+      "\n"
+      "        // Begin second unit of work\n"
+      "\n"
+      "        Session session2 = HibernateUtil.getSessionFactory().getCurrentSession();\n"
+      "        session2.beginTransaction();\n"
+      "        session2.update(aPerson); // Reattachment of aPerson\n"
+      "\n"
+      "        session2.getTransaction().commit();\n"
+      "    }]]>"
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:769
+#, no-c-format
+msgid "The call to <literal>update</literal> makes a detached object persistent again by binding it to a new unit of work, so any modifications you made to it while detached can be saved to the database. This includes any modifications (additions/deletions) you made to a collection of that entity object."
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:778
+#, no-c-format
+msgid "This is not much use in our example, but it is an important concept you can incorporate into your own application. Complete this exercise by adding a new action to the main method of the <literal>EventManager</literal> and call it from the command line. If you need the identifiers of a person and an event - the <literal>save()</literal> method returns it (you might have to modify some of the previous methods to return that identifier):"
+msgstr ""
+
+#. Tag: programlisting
+#: tutorial.xml:786
+#, no-c-format
+msgid ""
+      "<![CDATA[        else if (args[0].equals(\"addpersontoevent\")) {\n"
+      "            Long eventId = mgr.createAndStoreEvent(\"My Event\", new Date());\n"
+      "            Long personId = mgr.createAndStorePerson(\"Foo\", \"Bar\");\n"
+      "            mgr.addPersonToEvent(personId, eventId);\n"
+      "            System.out.println(\"Added person \" + personId + \" to event \" + eventId);\n"
+      "        }]]>"
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:788
+#, no-c-format
+msgid "This is an example of an association between two equally important classes : two entities. As mentioned earlier, there are other classes and types in a typical model, usually \"less important\". Some you have already seen, like an <literal>int</literal> or a <classname>java.lang.String</classname>. We call these classes <emphasis>value types</emphasis>, and their instances <emphasis>depend</emphasis> on a particular entity. Instances of these types do not have their own identity, nor are they shared between entities. Two persons do not reference the same <literal>firstname</literal> object, even if they have the same first name. Value types cannot only be found in the JDK , but you can also write dependent classes yourself such as an <literal>Address</literal> or <literal>MonetaryAmount</literal> class. In fact, in a Hibernate application all JDK classes are considered value types."
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:806
+#, no-c-format
+msgid "You can also design a collection of value types. This is conceptually different from a collection of references to other entities, but looks almost the same in Java."
+msgstr ""
+
+#. Tag: title
+#: tutorial.xml:815
+#, no-c-format
+msgid "Collection of values"
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:817
+#, no-c-format
+msgid "Let's add a collection of email addresses to the <literal>Person</literal> entity. This will be represented as a <interfacename>java.util.Set</interfacename> of <classname>java.lang.String</classname> instances:"
+msgstr ""
+
+#. Tag: programlisting
+#: tutorial.xml:823
+#, no-c-format
+msgid ""
+      "<![CDATA[    private Set emailAddresses = new HashSet();\n"
+      "\n"
+      "    public Set getEmailAddresses() {\n"
+      "        return emailAddresses;\n"
+      "    }\n"
+      "\n"
+      "    public void setEmailAddresses(Set emailAddresses) {\n"
+      "        this.emailAddresses = emailAddresses;\n"
+      "    }]]>"
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:825
+#, no-c-format
+msgid "The mapping of this <literal>Set</literal> is as follows:"
+msgstr ""
+
+#. Tag: programlisting
+#: tutorial.xml:829
+#, no-c-format
+msgid ""
+      "<![CDATA[        <set name=\"emailAddresses\" table=\"PERSON_EMAIL_ADDR\">\n"
+      "            <key column=\"PERSON_ID\"/>\n"
+      "            <element type=\"string\" column=\"EMAIL_ADDR\"/>\n"
+      "        </set>]]>"
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:831
+#, no-c-format
+msgid "The difference compared with the earlier mapping is the use of the <literal>element</literal> part which tells Hibernate that the collection does not contain references to another entity, but is rather a collection whose elements are values types, here specifically of type <literal>string</literal>. The lowercase name tells you it is a Hibernate mapping type/converter. Again the <literal>table</literal> attribute of the <literal>set</literal> element determines the table name for the collection. The <literal>key</literal> element defines the foreign-key column name in the collection table. The <literal>column</literal> attribute in the <literal>element</literal> element defines the column name where the email address values will actually be stored."
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:847
+#, no-c-format
+msgid "Here is the updated schema:"
+msgstr ""
+
+#. Tag: programlisting
+#: tutorial.xml:851
+#, no-c-format
+msgid ""
+      "<![CDATA[\n"
+      "  _____________        __________________\n"
+      " |             |      |                  |       _____________\n"
+      " |   EVENTS    |      |   PERSON_EVENT   |      |             |       ___________________\n"
+      " |_____________|      |__________________|      |    PERSON   |      |                   |\n"
+      " |             |      |                  |      |_____________|      | PERSON_EMAIL_ADDR |\n"
+      " | *EVENT_ID   | <--> | *EVENT_ID        |      |             |      |___________________|\n"
+      " |  EVENT_DATE |      | *PERSON_ID       | <--> | *PERSON_ID  | <--> |  *PERSON_ID       |\n"
+      " |  TITLE      |      |__________________|      |  AGE        |      |  *EMAIL_ADDR      |\n"
+      " |_____________|                                |  FIRSTNAME  |      |___________________|\n"
+      "                                                |  LASTNAME   |\n"
+      "                                                |_____________|\n"
+      " ]]>"
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:853
+#, no-c-format
+msgid "You can see that the primary key of the collection table is in fact a composite key that uses both columns. This also implies that there cannot be duplicate email addresses per person, which is exactly the semantics we need for a set in Java."
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:859
+#, no-c-format
+msgid "You can now try to add elements to this collection, just like we did before by linking persons and events. It is the same code in Java:"
+msgstr ""
+
+#. Tag: programlisting
+#: tutorial.xml:864
+#, no-c-format
+msgid ""
+      "<![CDATA[    private void addEmailToPerson(Long personId, String emailAddress) {\n"
+      "        Session session = HibernateUtil.getSessionFactory().getCurrentSession();\n"
+      "        session.beginTransaction();\n"
+      "\n"
+      "        Person aPerson = (Person) session.load(Person.class, personId);\n"
+      "        // adding to the emailAddress collection might trigger a lazy load of the collection\n"
+      "        aPerson.getEmailAddresses().add(emailAddress);\n"
+      "\n"
+      "        session.getTransaction().commit();\n"
+      "    }]]>"
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:866
+#, no-c-format
+msgid "This time we did not use a <emphasis>fetch</emphasis> query to initialize the collection. Monitor the SQL log and try to optimize this with an eager fetch."
+msgstr ""
+
+#. Tag: title
+#: tutorial.xml:875
+#, no-c-format
+msgid "Bi-directional associations"
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:877
+#, no-c-format
+msgid "Next you will map a bi-directional association. You will make the association between person and event work from both sides in Java. The database schema does not change, so you will still have many-to-many multiplicity."
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:885
+#, no-c-format
+msgid "A relational database is more flexible than a network programming language, in that it does not need a navigation direction; data can be viewed and retrieved in any possible way."
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:893
+#, no-c-format
+msgid "First, add a collection of participants to the <literal>Event</literal> class:"
+msgstr ""
+
+#. Tag: programlisting
+#: tutorial.xml:898
+#, no-c-format
+msgid ""
+      "<![CDATA[    private Set participants = new HashSet();\n"
+      "\n"
+      "    public Set getParticipants() {\n"
+      "        return participants;\n"
+      "    }\n"
+      "\n"
+      "    public void setParticipants(Set participants) {\n"
+      "        this.participants = participants;\n"
+      "    }]]>"
+msgstr ""
+
+#. Tag: para
+#: tutorial.xml:900
+#, no-c-format
+msgid "Now map this side of the association in <literal>Event.hbm.xml</literal>."
+msgstr ""
+
+#. Tag: programlisting
+#: tutorial.xml:90

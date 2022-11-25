@@ -1,0 +1,31 @@
+nvers/entities/EntityConfiguration.html" title="class in org.hibernate.envers.entities">EntityConfiguration</A></CODE></FONT></TD>
+<TD><CODE><B>EntitiesConfigurations.</B><B><A HREF="../../../../../org/hibernate/envers/entities/EntitiesConfigurations.html#get(java.lang.String)">get</A></B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;entityName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/hibernate/envers/entities/EntityConfiguration.html" title="class in org.hibernate.envers.entities">EntityConfiguration</A></CODE></FONT></TD>
+<TD><CODE><B>EntitiesConfigurations.</B><B><A HREF="../../../../../org/hibernate/envers/entities/EntitiesConfigurations.html#getNotVersionEntityConfiguration(java.lang.String)">getNotVersionEntityConfiguration</A></B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;entityName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructor parameters in <A HREF="../../../../../org/hibernate/envers/entities/package-summary.html">org.hibernate.envers.entities</A> with type arguments of type <A HREF="../../../../../org/hibernate/envers/entities/EntityConfiguration.html" title="class in org.hibernate.envers.entities">EntityConfiguration</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/hibernate/envers/entities/EntitiesConfigurations.html#EntitiesConfigurations(java.util.Map, java.util.Map)">EntitiesConfigurations</A></B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="../../../../../org/hibernate/envers/entities/EntityConfiguration.html" title="class in org.hibernate.envers.entities">EntityConfiguration</A>&gt;&nbsp;entitiesConfigurations,
+                       <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="../../../../../org/hibernate/envers/entities/EntityConfiguration.html" title="class in org.hibernate.envers.entities">EntityConfiguration</A>&gt;&nbsp;notAuditedEntitiesConfigurations)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/hibernate/envers/entities/EntitiesConfigurations.html#EntitiesConfigurations(java.util.Map, java.util.Map)">EntitiesConfigurations</A></B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>

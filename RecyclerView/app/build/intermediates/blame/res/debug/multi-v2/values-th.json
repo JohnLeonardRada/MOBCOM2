@@ -1,0 +1,49 @@
+* Ideally, this should be handled by OGNL directly.
+     */
+    public void setValue(String name, Map<String, Object> context, Object root, Object value) throws OgnlException {
+        setValue(name, context, root, value, true);
+    }
+
+    protected void setValue(String name, Map<String, Object> context, Object root, Object value, boolean evalName) throws OgnlException {
+        Object tree = compile(name);
+        if (!evalName && isEvalExpression(tree, context)) {
+            throw new OgnlException("Eval expression cannot be used as parameter name");
+        }
+        Ognl.setValue(tree, context, root, value);
+    }
+
+    private boolean isEvalExpression(Object tree, Map<String, Object> context) throws OgnlException {
+        if (tree instanceof SimpleNode) {
+            SimpleNode node = (SimpleNode) tree;
+            return node.isEvalChain((OgnlContext) context);
+        }
+        return false;
+    }
+
+    public Object getValue(String name, Map<String, Object> context, Object root) throws OgnlException {
+        return Ognl.getValue(compile(name), context, root);
+    }
+
+    public Object getValue(String name, Map<String, Object> context, Object root, Class resultType) throws OgnlException {
+        return Ognl.getValue(compile(name), context, root, resultType);
+    }
+
+
+    public Object compile(String expression) throws OgnlException {
+        if (enableExpressionCache) {
+            Object o = expressions.get(expression);
+            if (o == null) {
+                o = Ognl.parseExpression(expression);
+                expressions.putIfAbsent(expression, o);
+            }
+            return o;
+        } else
+            return Ognl.parseExpression(expression);
+    }
+
+    /**
+     * Copies the properties in the object "from" and sets them in the object "to"
+     * using specified type converter, or {@link com.opensymphony.xwork2.conversion.impl.XWorkConverter} if none
+     * is specified.
+     *
+     * @param from       the sour

@@ -1,0 +1,56 @@
+A>
+  <IMG SRC="../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../org/hibernate/event/AbstractEvent.html" title="class in org.hibernate.event">org.hibernate.event.AbstractEvent</A>
+      <IMG SRC="../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../org/hibernate/event/AbstractCollectionEvent.html" title="class in org.hibernate.event">org.hibernate.event.AbstractCollectionEvent</A>
+          <IMG SRC="../../../resources/inherit.gif" ALT="extended by "><B>org.hibernate.event.PreCollectionUpdateEvent</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>PreCollectionUpdateEvent</B><DT>extends <A HREF="../../../org/hibernate/event/AbstractCollectionEvent.html" title="class in org.hibernate.event">AbstractCollectionEvent</A></DL>
+</PRE>
+
+<P>
+An event that occurs before a collection is updated
+<P>
+
+<P>
+<DL>
+<DT><B>Author:</B></DT>
+  <DD>Gail Badner</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../serialized-form.html#org.hibernate.event.PreCollectionUpdateEvent">Serialized Form</A></DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../org/hibernate/event/PreCollectionUpdateEvent.html#PreCollectionUpdateEvent(org.hibernate.persister.collection.CollectionPersister, org.hibernate.collection.PersistentCollection, org.hibernate.event.EventSource)">PreCollectionUpdateEvent</A></B>(<A HREF="../../../org/hibernate/persister/collection/CollectionPersister.html" title="interface in org.hibernate.persister.collection">CollectionPersister</A>&nbsp;collectionPersister,
+                         <A HREF="../../../org/hibernate/collection/PersistentCollection.html" title="interface in org.hibernate.collection">PersistentCollection</A>&nbsp;collection,
+                         <A HREF="../../../org/hibernate/event/EventSource.html" title="interface in org.hibernate.event">EventSource</A>&nbsp;source)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.hibernate.event.AbstractCollectionEvent"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubH

@@ -1,0 +1,27 @@
+vax.jms">QueueConnection</A></DL>
+</PRE>
+
+<P>
+An <CODE>XAQueueConnection</CODE> provides the same create options as 
+ <CODE>QueueConnection</CODE> (optional).  
+ The only difference is that an <CODE>XAConnection</CODE> is by definition 
+ transacted.
+
+<P>The <CODE>XAQueueConnection</CODE> interface is optional.  JMS providers 
+ are not required to support this interface. This interface is for 
+ use by JMS providers to support transactional environments. 
+ Client programs are strongly encouraged to use the transactional support
+ available in their environment, rather than use these XA
+ interfaces directly.
+<P>
+
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../javax/jms/XAConnection.html" title="interface in javax.jms"><CODE>XAConnection</CODE></A></DL>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method

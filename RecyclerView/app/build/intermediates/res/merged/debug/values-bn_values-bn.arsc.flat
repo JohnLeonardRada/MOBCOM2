@@ -1,0 +1,58 @@
+ </TD>
+</TR>
+</TBODY></TABLE>
+</DIV>
+
+
+
+<H3><A name="MigrationGuide-Webwork2.2toStruts2"></A>Webwork 2.2 to Struts 2</H3>
+
+<DIV class="table-wrap">
+<TABLE class="confluenceTable"><TBODY>
+<TR>
+<TH class="confluenceTh"><A href="key-changes-from-webwork-2.html" title="Key Changes From WebWork 2">Key Changes From WebWork 2</A></TH>
+<TD class="confluenceTd"> What has been removed or changed from WebWork 2.2 to Struts 2 </TD>
+</TR>
+<TR>
+<TH class="confluenceTh"><A href="webwork-2-migration-strategies.html" title="WebWork 2 Migration Strategies">WebWork 2 Migration Strategies</A>   </TH>
+<TD class="confluenceTd"> Steps and overall strategies for migrating WebWork 2 applications to Struts 2. </TD>
+</TR>
+</TBODY></TABLE>
+</DIV>
+
+
+
+
+<H2><A name="MigrationGuide-FAQs"></A>FAQs</H2>
+
+<UL>
+	<LI><A href="where-do-we-get-the-latest-version-the-framework.html" title="Where do we get the latest version the framework">Where do we get the latest version the framework</A>?</LI>
+	<LI><A href="what-are-some-of-the-frameworks-best-features.html" title="What are some of the framework's best features">What are some of the framework's best features</A>?</LI>
+	<LI><A href="what-is-the-actioncontext.html" title="What is the ActionContext?">What is the ActionContext&#63;</A></LI>
+</UL>
+
+
+<H2><A name="MigrationGuide-Next%3AContributorsGuide"></A>Next: <A href="contributors-guide.html" title="Contributors Guide">Contributors Guide</A></H2>
+        </DIV>
+
+                  <DIV class="tabletitle">
+            Children
+            <SPAN class="smalltext" id="show" style="display: inline;">
+              <A href="javascript:showChildren()">Show Children</A></SPAN>
+            <SPAN class="smalltext" id="hide" style="display: none;">
+              <A href="javascript:hideChildren()">Hide Children</A></SPAN>
+          </DIV>
+          <DIV class="greybox" id="children" style="display: none;">
+                                      <A href="release-notes-200.html" title="Release Notes 2.0.0">Release Notes 2.0.0</A>
+              <SPAN class="smalltext">(Apache Struts 2 Documentation)</SPAN>
+              <BR>
+                          <A href="migration-tools.html" title="Migration Tools">Migration Tools</A>
+              <SPAN class="smalltext">(Apache Struts 2 Documentation)</SPAN>
+              <BR>
+                          <A href="comparing-struts-1-and-2.html" title="Comparing Struts 1 and 2">Comparing Struts 1 and 2</A>
+              <SPAN class="smalltext">(Apache Struts 2 Documentation)</SPAN>
+              <BR>
+                          <A href="migration-strategies.html" title="Migration Strategies">Migration Strategies</A>
+              <SPAN class="smalltext">(Apache Struts 2 Documentation)</SPAN>
+              <BR>
+                          <A href="struts-1-soluti

@@ -1,0 +1,19 @@
+eException</A></PRE>
+<DL>
+<DD>Inject the value of a particular property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>entity</CODE> - The entity into which to inject the value.<DD><CODE>propertyName</CODE> - The name of the property.<DD><CODE>value</CODE> - The property value to inject.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../org/hibernate/HibernateException.html" title="class in org.hibernate">HibernateException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPropertyValuesToInsert(java.lang.Object, java.util.Map, org.hibernate.engine.SessionImplementor)"><!-- --></A><H3>
+getPropertyValuesToInsert</H3>
+<PRE>
+<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>[] <B>getPropertyValuesToInsert</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Ob

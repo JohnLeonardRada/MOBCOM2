@@ -1,0 +1,15 @@
+ion, java.lang.Object, java.util.Map, java.lang.Object, org.hibernate.envers.reader.AuditReaderImplementor, java.lang.Number)">mapToEntityFromMap</A></CODE> in interface <CODE><A HREF="../../../../../org/hibernate/envers/entities/mapper/PropertyMapper.html" title="interface in org.hibernate.envers.entities.mapper">PropertyMapper</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>verCfg</CODE> - Versions configuration.<DD><CODE>obj</CODE> - Object to map to.<DD><CODE>data</CODE> - Data to map from.<DD><CODE>primaryKey</CODE> - Primary key of the object to which we map (for relations)<DD><CODE>versionsReader</CODE> - VersionsReader for reading relations<DD><CODE>revision</CODE> - Revision at which the object is read, for reading relations</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mapCollectionChanges(java.lang.String, org.hibernate.collection.PersistentCollection, java.io.Serializable, java.io.Serializable)"><!-- --></A><H3>
+mapCollectionChanges</H3>
+<PRE>
+public <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/hibernate/envers/entities/mapper/PersistentCollectionChangeData.html" title="class in org.hibernate.envers.entities.mapper">PersistentCollectionChangeData</A>&gt; <B>mapCollectionChanges</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;referencingPropertyName,
+                                                                 <A HREF="../../../../../org/hibernate/collection/PersistentCollection.html" title="interface in org.hibernate.collection">PersistentCollection</A>&nbsp;newColl,
+                                                                 <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A>&nbsp;oldColl,
+           

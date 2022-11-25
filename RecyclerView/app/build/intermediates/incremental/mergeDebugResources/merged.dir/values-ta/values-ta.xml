@@ -1,0 +1,64 @@
+ly a type converter globally. This can be done by editing the file
+ * <b>xwork-conversion.properties</b> in the root of your class path (typically WEB-INF/classes) and providing a
+ * property in the form of the class name of the object you wish to convert on the left hand side and the class name of
+ * the type converter on the right hand side. For example, providing a type converter for all Point objects would mean
+ * adding the following entry:
+ * <p/>
+ * <p/><b>com.acme.Point = com.acme.PointConverter</b>
+ * <p/>
+ * <!-- END SNIPPET: javadoc -->
+ * <p/>
+ * <p/>
+ * <p/>
+ * <!-- START SNIPPET: i18n-note -->
+ * <p/>
+ * Type conversion should not be used as a substitute for i18n. It is not recommended to use this feature to print out
+ * properly formatted dates. Rather, you should use the i18n features of Struts 2 (and consult the JavaDocs for JDK's
+ * MessageFormat object) to see how a properly formatted date should be displayed.
+ * <p/>
+ * <!-- END SNIPPET: i18n-note -->
+ * <p/>
+ * <p/>
+ * <p/>
+ * <!-- START SNIPPET: error-reporting -->
+ * <p/>
+ * Any error that occurs during type conversion may or may not wish to be reported. For example, reporting that the
+ * input "abc" could not be converted to a number might be important. On the other hand, reporting that an empty string,
+ * "", cannot be converted to a number might not be important - especially in a web environment where it is hard to
+ * distinguish between a user not entering a value vs. entering a blank value.
+ * <p/>
+ * <p/> By default, all conversion errors are reported using the generic i18n key <b>xwork.default.invalid.fieldvalue</b>,
+ * which you can override (the default text is <i>Invalid field value for field "xxx"</i>, where xxx is the field name)
+ * in your global i18n resource bundle.
+ * <p/>
+ * <p/>However, sometimes you may wish to override this message on a per-field basis. You can do this by adding an i18n
+ * key associated with just your action (Action.properties) using the pattern <b>invalid.fieldvalue.xxx</b>, where xxx
+ * is the field name.
+ * <p/>
+ * <p/>It is important to know that none of these errors are actually reported directly. Rather, they are added to a map
+ * called <i>conversionErrors</i> in the ActionContext. There are several ways this map can then be accessed and the
+ * errors can be reported accordingly.
+ * <p/>
+ * <!-- END SNIPPET: error-reporting -->
+ *
+ * @author <a href="mailto:plightbo@gmail.com">Pat Lightbody</a>
+ * @author Rainer Hermanns
+ * @author <a href='mailto:the_mindstorm[at]evolva[dot]ro'>Alexandru Popescu</a>
+ * @author tm_jee
+ * @version $Date: 2013-01-22 22:20:35 +0100 (Tue, 22 Jan 2013) $ $Id: XWorkConverter.java 1437180 2013-01-22 21:20:35Z lukaszlenart $
+ * @see XWorkBasicConverter
+ */
+public class XWorkConverter extends DefaultTypeConverter {
+
+    private static final Logger LOG = LoggerFactory.getLogger(XWorkConverter.class);
+
+    public static final String REPORT_CONVERSION_ERRORS = "report.conversion.errors";
+    public static final String CONVERSION_PROPERTY_FULLNAME = "conversion.property.fullName";
+    public static final String CONVERSION_ERROR_PROPERTY_PREFIX = "invalid.fieldvalue.";
+    public static final String CONVERSION_COLLECTION_PREFIX = "Collection_";
+
+    public static final String LAST_BEAN_CLASS_ACCESSED = "last.bean.accessed";
+    public static final String LAST_BEAN_PROPERTY_ACCESSED = "last.property.accessed";
+    public static final String MESSAGE_INDEX_PATTERN = "\\[\\d+\\]\\.";
+    public static final String MESSAGE_INDEX_BRACKET_PATTERN = "[\\[\\]\\.]";
+    public stati

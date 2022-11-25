@@ -1,0 +1,39 @@
+               }
+            }
+        }
+
+        PatternMatcher<int[]> matcher = container.getInstance(PatternMatcher.class);
+        return new RuntimeConfigurationImpl(Collections.unmodifiableMap(namespaceActionConfigs),
+                Collections.unmodifiableMap(namespaceConfigs), matcher);
+    }
+
+    private void setDefaultResults(Map<String, ResultConfig> results, PackageConfig packageContext) {
+        String defaultResult = packageContext.getFullDefaultResultType();
+
+        for (Map.Entry<String, ResultConfig> entry : results.entrySet()) {
+
+            if (entry.getValue() == null) {
+                ResultTypeConfig resultTypeConfig = packageContext.getAllResultTypeConfigs().get(defaultResult);
+                entry.setValue(new ResultConfig.Builder(null, resultTypeConfig.getClassName()).build());
+            }
+        }
+    }
+
+    /**
+     * Builds the full runtime actionconfig with all of the defaults and inheritance
+     *
+     * @param packageContext the PackageConfig which holds the base config we're building from
+     * @param baseConfig     the ActionConfig which holds only the configuration specific to itself, without the defaults
+     *                       and inheritance
+     * @return a full ActionConfig for runtime configuration with all of the inherited and default params
+     * @throws com.opensymphony.xwork2.config.ConfigurationException
+     *
+     */
+    private ActionConfig buildFullActionConfig(PackageConfig packageContext, ActionConfig baseConfig) throws ConfigurationException {
+        Map<String, String> params = new TreeMap<String, String>(baseConfig.getParams());
+        Map<String, ResultConfig> results = new TreeMap<String, ResultConfig>();
+
+        if (!baseConfig.getPackageName().equals(packageContext.getName()) && packageContexts.containsKey(baseConfig.getPackageName())) {
+            results.putAll(packageContexts.get(baseConfig.getPackageName()).getAllGlobalResults());
+        } else {
+        

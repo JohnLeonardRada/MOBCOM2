@@ -1,0 +1,15 @@
+itializor"><B>org.hibernate.envers.entities.mapper.relation.lazy.initializor</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.hibernate.envers.query.impl"><B>org.hibernate.envers.query.impl</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.hibernate.envers.entities.mapper.relation.component"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/hibernate/envers/entities/EntityInstantiator.html" title="class in org.hibernate.envers.entities">EntityInstantiator</A> in <A HREF="../../../../../org/hibernate/envers/entities/mapper/relation/component/package-summary.html">org.hibernate.envers.entities.map

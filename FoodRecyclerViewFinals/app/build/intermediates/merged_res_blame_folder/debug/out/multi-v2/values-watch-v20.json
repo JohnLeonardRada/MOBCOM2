@@ -1,0 +1,21 @@
+ption {
+        DefaultActionMapper mapper = new DefaultActionMapper();
+        ActionMapping actionMapping = new ActionMapping();
+        actionMapping.setName("myActionName?test=bla");
+        actionMapping.setNamespace("");
+        String uri = mapper.getUriFromActionMapping(actionMapping);
+
+        assertEquals("/myActionName.action?test=bla", uri);
+    }
+
+    public void testGetUriFromActionMapper10() throws Exception {
+        DefaultActionMapper mapper = new DefaultActionMapper();
+        ActionMapping actionMapping = new ActionMapping();
+        actionMapping.setName("myActionName?test=bla");
+        actionMapping.setNamespace("/");
+        String uri = mapper.getUriFromActionMapping(actionMapping);
+
+        assertEquals("/myActionName.action?test=bla", uri);
+    }
+
+    public void testGetUriFromActionMapper11() throws Exception {
